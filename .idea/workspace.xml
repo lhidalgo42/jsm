@@ -2,121 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="193688f7-5464-48ea-95a9-3034fa47cf07" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/bmw/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/bmw/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/bmw/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/bmw/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/bmw/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/byd/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/byd/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/byd/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/byd/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/byd/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/chevrolet/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/chevrolet/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/chevrolet/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/chevrolet/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/citroen/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/citroen/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/citroen/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/citroen/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/citroen/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/citroen/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/citroen2/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/citroen2/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/citroen2/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/citroen2/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/dodge/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/dodge/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/dodge/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/dodge/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/dodge/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/dodge/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/autos/dodge/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/bariol_bold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/bariol_bold-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/bariol_bold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/bariol_bold-webfontd41d.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/et-line.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/et-line.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/et-line.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/et-lined41d.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont862f.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont862f.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont862f.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfontd41d.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regulard41d.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/quaversans.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/quaversans.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/quaversans.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/quaversansd41d.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/quaverserif.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/quaverserif.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/quaverserif.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/quaverserifd41d.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/38.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/LAW.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/error.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/lawyer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/remove.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/success.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layout/master.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pages/cars.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pages/index.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pages/sell.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/section/copyrights.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/section/faq.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/section/footer.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/section/header/home.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/section/lead/home.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/section/map.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/section/nav/home.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/section/nav/sell.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/section/products/home.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/section/sell.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/animate.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/et-line.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/pro-bars.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/rotator.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.easypiechart.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.nav.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/rotator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/wow.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/database.php" afterPath="$PROJECT_DIR$/app/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/local/database.php" afterPath="$PROJECT_DIR$/app/config/local/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/start.php" afterPath="$PROJECT_DIR$/bootstrap/start.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
     </list>
     <ignored path="jsm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -188,10 +74,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sell.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sell.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/section/sell.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39306358">
+            <state vertical-scroll-proportion="-3.709091">
               <caret line="397" column="30" selection-start-line="397" selection-start-column="30" selection-end-line="397" selection-end-column="30" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
@@ -216,6 +102,16 @@
                 <element signature="n#div#6;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#7;n#div#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33029196">
+              <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -278,7 +174,6 @@
         <option value="$PROJECT_DIR$/app/database/migrations/2016_04_08_135818_create_faqs_type_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2016_04_08_135818_create_faqs_types_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2016_04_08_135738_create_faqs_table.php" />
-        <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2016_04_08_183550_create_photos_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2016_03_08_020803_create_cars_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2016_03_08_011119_create_equipment_table.php" />
@@ -297,6 +192,7 @@
         <option value="$PROJECT_DIR$/app/views/section/nav/sell.blade.php" />
         <option value="$PROJECT_DIR$/app/views/pages/sell.blade.php" />
         <option value="$PROJECT_DIR$/app/views/section/sell.blade.php" />
+        <option value="$PROJECT_DIR$/app/config/database.php" />
       </list>
     </option>
   </component>
@@ -514,6 +410,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -860,13 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04775281">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Equipment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19101124">
@@ -985,7 +892,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/section/sell.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39306358">
+        <state vertical-scroll-proportion="-3.709091">
           <caret line="397" column="30" selection-start-line="397" selection-start-column="30" selection-end-line="397" selection-end-column="30" />
           <folding>
             <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
@@ -1010,6 +917,14 @@
             <element signature="n#div#6;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#7;n#div#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33029196">
+          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
