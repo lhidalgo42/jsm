@@ -1,6 +1,6 @@
 <?php
 
-class FaqTypes extends \Eloquent {
+class FaqType extends \Eloquent {
 	protected $fillable = [];
 	protected $table = 'faq_types';
 }
