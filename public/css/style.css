@@ -492,7 +492,7 @@ h2.header-text{
 		padding-right:20px;
 	}
 	.header, .navbar-default, #custom .menu-wrapper.affix .header, #custom .menu-wrapper.affix .navbar-default {
-	background: rgb(48, 173, 151) !important;
+	background: rgb(101, 102, 173) !important;
 	margin-top: -20px;
 	transition: .4s;
 	}
