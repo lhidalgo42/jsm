@@ -8,7 +8,7 @@ class FaqTypeTableSeeder extends Seeder {
 	public function run()
 	{
 		FaqType::create([
-			'Preguntas Frecuentes'
+			'name' => 'Preguntas Frecuentes'
 		]);
 	}
 

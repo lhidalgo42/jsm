@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="row">
-        <h4 class="h4"><strong>Datos del Vehiculo</strong></h4>
+        <h4 class="h4"><strong>Especificaciones Tecnicas</strong></h4>
 
         <div class="col-md-4">
             <select id="marca" name="marca" class="form-control">
@@ -226,9 +226,6 @@
             <input type="number" id="anio" class="form-control" placeholder="Año">
         </div>
         <div class="col-md-4">
-            <input type="text" id="cilindrada" class="form-control" placeholder="cilindrada">
-        </div>
-        <div class="col-md-4">
             <select id="tipo" name="tipo" class="form-control">
                 <option>Seleccion Tipo</option>
                 <option value="Automovil">Automovil</option>
@@ -238,8 +235,6 @@
                 <option value="Mini bus">Mini bus</option>
             </select>
         </div>
-    </div>
-    <div class="row">
         <div class="col-md-4">
             <select id="carroceria" name="carroceria" class="form-control">
                 <option>Carroceria</option>
@@ -256,6 +251,26 @@
                 <option value="Ninguna">Ninguna</option>
             </select>
         </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <input type="text" id="cilindrada" class="form-control" placeholder="cilindrada">
+        </div>        <div class="col-md-4">
+            <input type="number" min="0" id="kilometraje" placeholder="Kilometraje" class="form-control">
+        </div>
+    </div>
+
+    <div class="row">
+        <h4 class="h4"><strong>Especificaciones del Vehículo</strong></h4>
+        <div class="col-md-4">
+            <select id="transmision" name="carroceria" class="form-control">
+                <option>Transmision</option>
+                <option value="Automatica">Automatica</option>
+                <option value="Manual">Manual</option>
+
+            </select>
+        </div>
         <div class="col-md-4">
             <select id="direccion" name="direccion" class="form-control">
                 <option>Dirección</option>
@@ -266,10 +281,23 @@
             </select>
         </div>
         <div class="col-md-4">
-            <input type="number" min="1" max="5" id="puertas" class="form-control" placeholder="Puertas">
+            <select id="aire" name="carroceria" class="form-control">
+                <option>Aire Acondicionado</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+
+            </select>
+        </div>
+    <div class="row">
+        <div class="col-md-4">
+            <select id="radio" name="carroceria" class="form-control">
+                <option>Radio</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+
+            </select>
         </div>
     </div>
-    <div class="row">
         <div class="col-md-4">
             <input type="text" id="color" class="form-control" placeholder="Color">
         </div>
@@ -283,9 +311,8 @@
                 <option value="Otro">Otro</option>
             </select>
         </div>
-        <div class="col-md-4">
-            <input type="number" min="0" id="kilometraje" placeholder="Kilometraje" class="form-control">
-        </div>
+
+
     </div>
     <div class="row">
         <div class="col-md-4">
@@ -392,9 +419,36 @@
         </div>
 
     </div>
-    <div class="row">
+    <div class="row">        <div class="col-md-4">
+            <input type="number" min="1" max="5" id="puertas" class="form-control" placeholder="Puertas">
+        </div>
         <textarea class="form-control" placeholder="Escriba algun Comentario Acerca del Vehiculo" rows="6"></textarea>
     </div>
     <button class="btn btn-lg f_button green">Enviar</button>
+    <script>
+        $.ajax({
+            url: "/new/car",
+            type: "POST",
+            data: {
+                name: $("#name").val(),
+                phone: $("#telefono").val(),
+                rut: $("#rut").val(),
+                marca: $("#marca").val(),
+                modelo: $("#modelo").val(),
+                version: $("#version").val(),
+                anio: $("#anio").val(),
+                cilindrada: $("#cilindrada").val(),
+                tipo: $("#tipo").val(),
+                carroceria: $("#carroceria").val(),
+                direccion: $("#direccion").val(),
+                puertas: $("#puertas").val(),
+                color: $("#color").val(),
+                combustible: $("#combustible").val(),
+                kilometraje: $("#kilometraje").val(),
+
+
+            }
+        })
+    </script>
 
 </div>
