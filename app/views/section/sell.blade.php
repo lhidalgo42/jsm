@@ -1,15 +1,31 @@
 <div class="container">
+    <style>
+        select{
+            margin: auto;
+            margin-bottom: 3em;
+        }
+    </style>
+    {{Form::open(array('url' => '/new/car', 'files' => true))}}
     <div class="row">
         <h4 class="h4"><strong>Datos Personales</strong></h4>
 
         <div class="col-md-4">
-            <input type="text" class="form-control" id="name" placeholder="Nombre">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
         </div>
         <div class="col-md-4">
-            <input type="text" class="form-control" id="telefono" placeholder="Telefono">
+            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Telefono">
         </div>
         <div class="col-md-4">
-            <input class="form-control" type="text" id="rut" placeholder="RUT">
+            <input type="text" class="form-control" id="telefono2" name="telefono2" placeholder="Confirme Telefono">
+        </div>
+        <div class="col-md-4">
+            <input class="form-control" type="text" id="rut" name="rut" placeholder="RUT">
+        </div>
+        <div class="col-md-4">
+            <input class="form-control" type="email" id="email" name="email" placeholder="Direcion de Correo">
+        </div>
+        <div class="col-md-4">
+            <input class="form-control" type="email" id="email2" name="email2" placeholder="Confirme Direcion de Correo">
         </div>
     </div>
     <div class="row">
@@ -256,16 +272,17 @@
     <div class="row">
         <div class="col-md-4">
             <input type="text" id="cilindrada" class="form-control" placeholder="cilindrada">
-        </div>        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
             <input type="number" min="0" id="kilometraje" placeholder="Kilometraje" class="form-control">
         </div>
     </div>
-
     <div class="row">
         <h4 class="h4"><strong>Especificaciones del Vehículo</strong></h4>
+
         <div class="col-md-4">
             <select id="transmision" name="carroceria" class="form-control">
-                <option>Transmision</option>
+                <option value="">Transmision</option>
                 <option value="Automatica">Automatica</option>
                 <option value="Manual">Manual</option>
 
@@ -273,7 +290,7 @@
         </div>
         <div class="col-md-4">
             <select id="direccion" name="direccion" class="form-control">
-                <option>Dirección</option>
+                <option value="">Dirección</option>
                 <option value="Asistida ">Asistida</option>
                 <option value="Hidraulica ">Hidraulica</option>
                 <option value="Mecanica ">Mecanica</option>
@@ -282,24 +299,65 @@
         </div>
         <div class="col-md-4">
             <select id="aire" name="carroceria" class="form-control">
-                <option>Aire Acondicionado</option>
+                <option value="">Aire Acondicionado</option>
                 <option value="Si">Si</option>
                 <option value="No">No</option>
-
-            </select>
-        </div>
-    <div class="row">
-        <div class="col-md-4">
-            <select id="radio" name="carroceria" class="form-control">
-                <option>Radio</option>
-                <option value="Si">Si</option>
-                <option value="No">No</option>
-
             </select>
         </div>
     </div>
+    <div class="row">
         <div class="col-md-4">
-            <input type="text" id="color" class="form-control" placeholder="Color">
+            <select id="radio" name="radio" class="form-control">
+                <option value="">Radio</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <select id="alzavidrios" name="alzavidrios" class="form-control">
+                <option value="">Alzavidrios Electrico</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <select id="espejos" name="espejos" class="form-control">
+                <option value="">Espejos Electricos</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <select id="frenos" name="frenos" class="form-control">
+                <option value="">Posee ABS</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <select id="airbag" name="airbag" class="form-control">
+                <option>Posee Airbag</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <select id="cierre" name="cierre" class="form-control">
+                <option>Posee Cierre Centralizado</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <select id="catalitico" name="catalitico" class="form-control">
+                <option>Catalitico</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
         </div>
         <div class="col-md-4">
             <select id="combustible" name="combustible" class="form-control">
@@ -311,18 +369,30 @@
                 <option value="Otro">Otro</option>
             </select>
         </div>
-
-
+        <div class="col-md-4">
+            <select id="llantas" name="llantas" class="form-control">
+                <option>Lantas</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+        </div>
     </div>
     <div class="row">
         <div class="col-md-4">
-            <select id="techo" name="techo" class="form-control">
-                <option>Tipo de Techo</option>
-                <option value="Ninguno">Ninguno</option>
-                <option value="Electrico">Electrico</option>
-                <option value="Manual">Manual</option>
+            <input type="number" name="puertas" id="puertas" class="form-control" placeholder="Numero de Puertas">
+        </div>
+        <div class="col-md-4">
+            <select id="alarma" name="alarma" class="form-control">
+                <option>Posee Alarma</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
             </select>
         </div>
+    </div>
+
+
+
+    <div class="row">
         <div class="col-md-4">
             <input type="text" id="patente" class="form-control" placeholder="Patente">
         </div>
@@ -362,93 +432,15 @@
             </select>
         </div>
     </div>
+
     <div class="row">
-        <h4 class="h4"><strong>Caracteristicas Adicionales del Vehiculo</strong></h4>
-
-        <div class="col-md-12">
-            <table class="table">
-                <tbody>
-                <tr>
-                    <td>
-                        <input type="checkbox" class="checkbox" value="Aire Acondicionado" id="aire">
-                    </td>
-                    <td>
-                        Aire Acondicionado
-                    </td>
-                    <td>
-                        <input type="checkbox" name="services[]" value="Radio" id="radio">
-                    </td>
-                    <td>
-                        Radio
-                    </td>
-                    <td>
-                        <input type="checkbox" name="services[]" value="Cierre Centralizado" id="cierrecentra">
-                    </td>
-                    <td>
-                        Cierre Centralizado
-                    </td>
-                    <td>
-                        <input type="checkbox" name="services[]" value="4 WD" id="wwd">
-                    </td>
-                    <td>
-                        4 WD
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="services[]" value="Catalitico" id="catalitico"></td>
-                    <td>Catalitico</td>
-                    <td><input type="checkbox" name="services[]" value="Alarma" id="alarma"></td>
-                    <td>Alarma</td>
-                    <td><input type="checkbox" name="services[]" value="LLantas" id="llantas"></td>
-                    <td>LLantas</td>
-                    <td><input type="checkbox" name="services[]" value="AirBag" id="airbag"></td>
-                    <td>AirBag</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="services[]" value="Frenos ABS" id="frenoabs"></td>
-                    <td>Frenos ABS</td>
-                    <td><input type="checkbox" name="services[]" value="Espejos Elec." id="espelect"></td>
-                    <td>Espejos Elec.</td>
-                    <td><input type="checkbox" name="services[]" value="Alza vidrios" id="alzavidrios"></td>
-                    <td>Alza vidrios</td>
-                    <td><input type="checkbox" name="services[]" value="Niguno" id="alzavidrios"></td>
-                    <td>Ninguno</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-
-    </div>
-    <div class="row">        <div class="col-md-4">
-            <input type="number" min="1" max="5" id="puertas" class="form-control" placeholder="Puertas">
+        <div class="col-md-4">
+            <input type="file" class="form-control" name="foto" id="foto">
         </div>
         <textarea class="form-control" placeholder="Escriba algun Comentario Acerca del Vehiculo" rows="6"></textarea>
     </div>
     <button class="btn btn-lg f_button green">Enviar</button>
-    <script>
-        $.ajax({
-            url: "/new/car",
-            type: "POST",
-            data: {
-                name: $("#name").val(),
-                phone: $("#telefono").val(),
-                rut: $("#rut").val(),
-                marca: $("#marca").val(),
-                modelo: $("#modelo").val(),
-                version: $("#version").val(),
-                anio: $("#anio").val(),
-                cilindrada: $("#cilindrada").val(),
-                tipo: $("#tipo").val(),
-                carroceria: $("#carroceria").val(),
-                direccion: $("#direccion").val(),
-                puertas: $("#puertas").val(),
-                color: $("#color").val(),
-                combustible: $("#combustible").val(),
-                kilometraje: $("#kilometraje").val(),
-
-
-            }
-        })
-    </script>
+    </form>
 
 </div>
+

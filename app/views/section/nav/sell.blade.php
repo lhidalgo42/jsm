@@ -14,7 +14,7 @@
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right" id="nav">
-                            <li class="current"><a href="#Home" title="">Home</a></li>
+                            <li class="current"><a href="/#home" title="">Home</a></li>
                             <li><a href="/#products" title="">Vehículos</a></li>
                             <li><a href="/#faq" title="">Preguntas Frecuentes</a></li>
                             <li><a href="/#contact" title="">Contacto</a></li>
