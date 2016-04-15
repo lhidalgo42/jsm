@@ -8,124 +8,42 @@
 
         <div class="row">
             <div class="portfolio-items">
+                <?php
+                    $autos = Car::orderBy('visitas','DESC')->take(6)->get();
+                ?>
+                @foreach($autos as $auto)
                 <div class="item-blog col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <ul>
+                        <?php
+                            $info = Specification::where('cars_id','=',$auto->id)->get()->first();
+                        ?>
                         <li class="img_item">
                             <div class="caption8 ctn_blue">
-                                <h3>BMW 320 IA - SEDAN</h3>
+                                <h3>{{$info->marca}} {{$info->modelo}}</h3>
                                 <ul>
-                                    <li>Año : 2011</li>
-                                    <li>Tipo Vehículo : Automóvil</li>
-                                    <li>Carrocería : Sedán</li>
-                                    <li>Kilometraje : 67.000</li>
-                                    <li>Cilindrada : 2.000 c.c.</li>
+                                    <li>Año : {{$info->anio}}</li>
+                                    <li>Tipo Vehículo : {{$info->tipo_vehiculo}}</li>
+                                    <li>Carrocería : {{$info->carroceria}}</li>
+                                    <li>Kilometraje : {{$info->kilometraje}}</li>
+                                    <li>Cilindrada : {{$info->cilindrada}} cc</li>
                                 </ul>
-                                <button class="btn btn-lg pf_button green" path="bmw" last="5">Ver más
+                                <button class="btn btn-lg pf_button green">Ver más
                                     Detalles
                                 </button>
                             </div>
-                            <img class="img-responsive" src="autos/bmw/1.jpg" alt="">
+                            <?php
+                            $photo = PhotoFile::where('cars_id','=',$auto->id)->take(1)->get()->first();
+
+                        ?>
+                            @if($photo)
+                            <img class="img-responsive" src="/autos/{{$auto->id}}/{{$photo->name}}" alt="">
+                            @else
+                            <img class="img-responsive" src="/images/imagen_no_disponible.jpg" alt="">
+                            @endif
                         </li>
                     </ul>
                 </div>
-                <div class="item-blog col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <ul>
-                        <li class="img_item">
-                            <div class="caption8 ctn_blue">
-                                <h3>BYD G3 GLX - FULL EQUIPO</h3>
-                                <ul>
-                                    <li>Año : 2012</li>
-                                    <li>Tipo Vehículo : Automóvil</li>
-                                    <li>Carrocería : Sedán</li>
-                                    <li>Kilometraje : 80.000</li>
-                                    <li>Cilindrada : 1.500 c.c.</li>
-                                </ul>
-                                <button class="btn btn-lg pf_button green" path="bmw" last="5">Ver más
-                                    Detalles
-                                </button>
-                            </div>
-                            <img class="img-responsive" src="autos/byd/1.jpg" alt="" last="5">
-                        </li>
-                    </ul>
-                </div>
-                <div class="item-blog col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <ul>
-                        <li class="img_item">
-                            <div class="caption8 ctn_blue">
-                                <h3>Chevrolet ASTRA GTC Turbo</h3>
-                                <ul>
-                                    <li>Año : 2009</li>
-                                    <li>Tipo Vehículo : Automóvil</li>
-                                    <li>Carrocería : Hatchback</li>
-                                    <li>Kilometraje : 120.000</li>
-                                    <li>Cilindrada : 2.000 c.c.</li>
-                                </ul>
-                                <button class="btn btn-lg pf_button green" path="bmw" last="5">Ver más
-                                    Detalles
-                                </button>
-                            </div>
-                            <img class="img-responsive" src="autos/chevrolet/1.jpg" alt="" last="4">
-                        </li>
-                    </ul>
-                </div>
-                <div class="item-blog col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <ul>
-                        <li class="img_item">
-                            <div class="caption8 ctn_blue">
-                                <h3>Citroën c3 - SKY TOUCH DIESEL</h3>
-                                <ul>
-                                    <li>Año : 2016</li>
-                                    <li>Tipo Vehículo : Automóvil</li>
-                                    <li>Carrocería : Hatchback</li>
-                                    <li>Cilindrada : 1.600 c.c.</li>
-                                </ul>
-                                <button class="btn btn-lg pf_button green" path="bmw" last="5">Ver más
-                                    Detalles
-                                </button>
-                            </div>
-                            <img class="img-responsive" src="autos/citroen/1.jpg" alt="" last="6">
-                        </li>
-                    </ul>
-                </div>
-                <div class="item-blog col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <ul>
-                        <li class="img_item">
-                            <div class="caption8 ctn_blue">
-                                <h3>Citroën DS3 - VTI 1.6</h3>
-                                <ul>
-                                    <li>Año : 2014</li>
-                                    <li>Tipo Vehículo : Automóvil</li>
-                                    <li>Carrocería : Hatchback</li>
-                                    <li>Kilometraje: 30.000</li>
-                                    <li>Cilindrada : 1.600 c.c.</li>
-                                </ul>
-                                <button class="btn btn-lg pf_button green" path="bmw" last="5">Ver más
-                                    Detalles
-                                </button>
-                            </div>
-                            <img class="img-responsive" src="autos/citroen2/1.jpg" alt="" last="4">
-                        </li>
-                    </ul>
-                </div>
-                <div class="item-blog col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <ul>
-                        <li class="img_item">
-                            <div class="caption8 ctn_blue">
-                                <h3>Dodge NEW DURANGO - CITADEL AWD</h3>
-                                <ul>
-                                    <li>Año : 2012</li>
-                                    <li>Tipo Vehículo : Todo Terreno</li>
-                                    <li>Carrocería : SUV</li>
-                                    <li>Kilometraje: 70.000</li>
-                                </ul>
-                                <button class="btn btn-lg pf_button green" path="bmw" last="5">Ver más
-                                    Detalles
-                                </button>
-                            </div>
-                            <img class="img-responsive" src="autos/dodge/1.jpg" alt="" last="7">
-                        </li>
-                    </ul>
-                </div>
+                @endforeach
             </div><!-- End of .portfolio-items -->
 
         </div><!-- end row -->

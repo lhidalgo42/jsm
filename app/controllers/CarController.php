@@ -19,7 +19,8 @@ class CarController extends \BaseController
      *
      * @return Response
      */
-    public function create(){
+    public function create()
+    {
         function generateRandomString($length = 10)
         {
             $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -30,12 +31,14 @@ class CarController extends \BaseController
             }
             return $randomString;
         }
+
         if (Input::get('phone') != Input::get('phone2')) {
             return Redirect::back()->withInput()->with('error', 'Los Numeros de Telefono no coinciden.');
         }
         if (Input::get('email') != Input::get('email2')) {
             return Redirect::back()->withInput()->with('error', 'Los Correos No Conciden');
         }
+
         $car = new Car();
         $car->name = Input::get('name');
         $car->phone = Input::get('phone');
@@ -49,6 +52,7 @@ class CarController extends \BaseController
         $car->pintura = Input::get('pintura');
         $car->comentario = Input::get('comentario');
         $car->save();
+
         $espacificatons = new Specification();
         $espacificatons->cars_id = $car->id;
         $espacificatons->marca = Input::get('marca');
@@ -61,6 +65,8 @@ class CarController extends \BaseController
         $espacificatons->kilometraje = Input::get('kilometraje');
         $espacificatons->color = Input::get('color');
         $espacificatons->save();
+
+
         $esquipament = new Equipment();
         $esquipament->cars_id = $car->id;
         $esquipament->transmision = Input::get('transmision');
@@ -80,23 +86,24 @@ class CarController extends \BaseController
         $esquipament->save();
 
         $files = Input::file('files');
-        foreach($files as $file) {
+        foreach ($files as $file) {
             $ext = $file->getClientOriginalExtension();
             $name = generateRandomString() . "." . $ext;
-            $destinationPath = public_path().'/autos/'.$car->id;
-            if(!File::isDirectory('/autos/'.$car->id)){
-                File::makeDirectory('/autos/'.$car->id);
-            if ($ext == "png" || $ext == "PNG" || $ext == "jpg" || $ext == "JPG") {
-                $photo = new PhotoFile();
-                $photo->cars_id = $car->id;
-                $photo->name = $name;
-                $photo->active = 1;
-                $photo->save();
-                $file->move($destinationPath, $name);
+            $destinationPath = public_path() . '/autos/' . $car->id;
+            if (!File::isDirectory('/autos/' . $car->id)) {
+                File::makeDirectory('/autos/' . $car->id);
+                if ($ext == "png" || $ext == "PNG" || $ext == "jpg" || $ext == "JPG") {
+                    $photo = new PhotoFile();
+                    $photo->cars_id = $car->id;
+                    $photo->name = $name;
+                    $photo->active = 1;
+                    $photo->save();
+                    $file->move($destinationPath, $name);
+                }
             }
-        }
-        return Redirect::to('/')->with('success', 'Auto Agregado Exitosame, Pendiente de Aprovación');
+            return Redirect::to('/')->with('success', 'Auto Agregado Exitosame, Pendiente de Aprovación');
 
+        }
     }
 
 
