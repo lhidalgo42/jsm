@@ -20,13 +20,13 @@ class MailController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('emails.correo')->with(compact(array('data' => Input::all())));
-		/*Mail::send('emails.correo',array('data' => Input::all()), function($message)
+		//return View::make('emails.correo')->with(compact(array('data' => Input::all())));to('ventas@jsmautos.cl', 'Ventas')->
+		Mail::send('emails.correo',array('data' => Input::all()), function($message)
 		{
-			$message->to('ventas@jsmautos.cl', 'Ventas')->cc(Input::get('email'),Input::get('name'))->subject(Input::get('subject'));
+			$message->to(Input::get('email'),Input::get('name'))->subject(Input::get('subject'));
 		});
 		return Redirect::to('/');
-		*/
+
 	}
 
 
