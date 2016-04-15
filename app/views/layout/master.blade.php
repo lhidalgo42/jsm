@@ -84,12 +84,7 @@
 
 <!-- Main Scripts-->
 
-<script>
-    $(".portfolio-items > div > ul > li > div > button").click(function () {
-        $("#modalTitle").html($(this).parent().children('h3').html());
-        $("#details").modal('show');
-    });
-</script>
+
 
 
 

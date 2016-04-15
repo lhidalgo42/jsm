@@ -127,7 +127,13 @@ class CarController extends \BaseController
     public
     function show($id)
     {
-        //
+        $car = Car::find($id);
+        $car->visitas = ($car->visitas+1);
+        $car->save();
+        $photos = PhotoFile::where('cars_id','=',$id)->get();
+        $spects = Specification::where('cars_id','=',$id)->get()->first();
+        $equipment = Equipment::where('cars_id','=',$id)->get()->first();
+        return json_encode(array('car' => $car,'photos' => $photos,'specification' => $spects,'equipment' => $equipment));
     }
 
 

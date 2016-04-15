@@ -27,7 +27,7 @@
                                     <li>Kilometraje : {{$info->kilometraje}}</li>
                                     <li>Cilindrada : {{$info->cilindrada}} cc</li>
                                 </ul>
-                                <button class="btn btn-lg pf_button green">Ver más
+                                <button class="btn btn-lg pf_button green" data-id="{{$auto->id}}">Ver más
                                     Detalles
                                 </button>
                             </div>
@@ -36,9 +36,9 @@
 
                         ?>
                             @if($photo)
-                            <img class="img-responsive" src="/autos/{{$photo->name}}" alt="">
+                            <img class="img-responsive" src="/autos/{{$photo->name}}" alt="" style="height: 317;width: 210;">
                             @else
-                            <img class="img-responsive" src="/images/imagen_no_disponible.jpg" alt="">
+                            <img class="img-responsive" src="/images/imagen_no_disponible.jpg" alt="" style="height: 317;width: 210;">
                             @endif
                         </li>
                     </ul>
@@ -49,6 +49,71 @@
         </div><!-- end row -->
     </div><!-- end portfolio_wrapper -->
 </div>
+<script>
+    $(".portfolio-items > div > ul > li > div > button").click(function () {
+        $("#modalTitle").html($(this).parent().children('h3').html());
+        $.ajax({
+            url:"/getcar/"+$(this).attr('data-id'),
+            type:"POST",
+            data:{},
+            success:function(data){
+                console.log(data);
+                var car = data.car;
+                var photos = data.photos;
+                var specification = data.specification;
+                var equipment = data.equipment;
+                $("#carousel > .carousel-indicators").html("");
+                $("#carousel > .carousel-inner").html("")
+                $("#spects").html("");
+                $("#spects").append("<li>Marca: "+specification.marca+"</li>" +
+                        "<li>Modelo:"+specification.modelo+"</li>" +
+                        "<li>Versión:"+specification.version+"</li>" +
+                        "<li>Año: "+specification.anio+"</li>" +
+                        "<li>Tipo vehículo: "+specification.tipo_vehiculo+"</li>" +
+                        "<li>Carrocería: "+specification.carroceria+"</li>" +
+                        "<li>Kilometraje: "+specification.kilometraje+"</li>" +
+                        "<li>Cilindrada : "+specification.cilindrada+" c.c.</li>");
+                $("#equip").html("");
+                $("#equip").append("<li>Transmisión: "+equipment.transmision+"</li>" +
+                        "<li>Dirección:"+equipment.direccion+"</li>" +
+                        "<li>Aire: "+equipment.aire+"</li>" +
+                        "<li>Radio: "+equipment.radio+"</li>" +
+                        "<li>Alzavidrios: "+equipment.alzavidrios+"</li>" +
+                        "<li>Espejos: "+equipment.espejos+"</li>" +
+                        "<li>Frenos: "+equipment.frenos+"</li>" +
+                        "<li>Airbag: "+equipment.airbag+"</li>" +
+                        "<li>Cierre: "+equipment.cierre+"</li>" +
+                        "<li>Catalítico: "+equipment.catalitico+"</li>" +
+                        " <li>Combustible: "+equipment.combustible+"</li>" +
+                        "<li>Llantas: "+equipment.llantas+"</li>" +
+                        "<li>Puertas: "+equipment.puertes+"</li>" +
+                        "<li>Alarma: "+equipment.alarma+"</li>");
+                $("#price").html("");
+                $("#price").append("Precio $ "+car.price)
+                for(var i = 0;i<photos.length;i++){
+                    if(i==0){
+                        $("#carousel > .carousel-indicators").append('<li data-target="#carousel" data-slide-to="'+i+'" class="active"></li>');
+                        $("#carousel > .carousel-inner").append('<div class="item active">' +
+                                '<img src="autos/'+photos[i].name+'" alt="auto1" class="img-rounded">' +
+                                '<div class="carousel-caption">' +
+                                '</div>' +
+                                '</div>')
+                    }
+                    else {
+                        $("#carousel > .carousel-indicators").append('<li data-target="#carousel" data-slide-to="' + i + '"></li>')
+                        $("#carousel > .carousel-inner").append('<div class="item">' +
+                                '<img src="autos/'+photos[i].name+'" alt="auto1" class="img-rounded">' +
+                                '<div class="carousel-caption">' +
+                                '</div>' +
+                                '</div>')
+                    }
+                }
+
+            }
+        });
+        $("#details").modal('show');
+    });
+</script>
 
 <!-- Modal -->
 <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" id="details">
@@ -67,7 +132,7 @@
                         <div id="carousel" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
-                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+
                                 <li data-target="#carousel" data-slide-to="1"></li>
                                 <li data-target="#carousel" data-slide-to="2"></li>
                                 <li data-target="#carousel" data-slide-to="3"></li>
@@ -77,31 +142,7 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <img src="autos/bmw/1.jpg" alt="auto1" class="img-rounded">
-
-                                    <div class="carousel-caption">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="autos/bmw/2.jpg" alt="auto2" class="img-rounded">
-
-                                    <div class="carousel-caption">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="autos/bmw/3.jpg" alt="auto3" class="img-rounded">
-
-                                    <div class="carousel-caption">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="autos/bmw/4.jpg" alt="auto4" class="img-rounded">
-
-                                    <div class="carousel-caption">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="autos/bmw/5.jpg" alt="auto5" class="img-rounded">
+                                    <img src="/images/imagen_no_disponible.jpg" alt="auto1" class="img-rounded">
 
                                     <div class="carousel-caption">
                                     </div>
@@ -122,7 +163,7 @@
                     </div>
                     <div class="col-lg-4">
                         <h4 class="h4">Especificaciones Técnicas</h4>
-                        <ul>
+                        <ul id="spects">
                             <li>Marca: BMW</li>
                             <li>Modelo: 320 IA</li>
                             <li>Versión: SEDAN</li>
@@ -133,7 +174,7 @@
                             <li>Cilindrada : 2.000 c.c.</li>
                         </ul>
                         <h4 class="h4">Equipamiento</h4>
-                        <ul>
+                        <ul id="equip">
                             <li>Transmisión: Automática</li>
                             <li>Dirección: Hidráulica</li>
                             <li>Aire: Acondicionado</li>
@@ -150,7 +191,7 @@
                             <li>Alarma: SI</li>
                             <li>Techo: Eléctrico</li>
                         </ul>
-                        <h3 class="h3"><strong>Precio $ 12.990.000</strong></h3>
+                        <h3 class="h3"><strong id="price">Precio $ 12.990.000</strong></h3>
                     </div>
                 </div>
 
