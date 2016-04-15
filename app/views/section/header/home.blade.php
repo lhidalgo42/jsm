@@ -2,9 +2,9 @@
     <?php
     $count = PhotoFile::all()->count();
     if($count!=0){
-        $id = rand(0,$count);
-    $photo = PhotoFile::find($id);
-    $image= 'autos/'.$photo->name;
+        $id = rand(1,$count);
+    $photo = PhotoFile::find($id);  
+$image= 'autos/'.$photo->name;
     }
     else{
         $image = 'images/5.jpg';
