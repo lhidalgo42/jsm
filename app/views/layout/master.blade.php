@@ -46,12 +46,6 @@
     <!-- Enable media queries on older bgeneral_rowsers -->
     <!--[if lt IE 9]>
     <script src="/js/respond.min.js"></script>  <![endif]-->
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.js"></script>
-    <script src="/js/custom.js"></script>
-    <script src="/js/jquery.nav.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/rotator.js"></script>
     <style>li{
             line-height:  1.3;
         }
@@ -83,10 +77,80 @@
 @yield('content')
 
 <!-- Main Scripts-->
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/custom.js"></script>
+<script src="/js/jquery.nav.js"></script>
+<script src="/js/wow.min.js"></script>
+<script src="/js/rotator.js"></script>
 
 
+<script>
+    $(".portfolio-items > div > ul > li > div > button").click(function () {
+        $("#modalTitle").html($(this).parent().children('h3').html());
+        $.ajax({
+            url:"/getcar/"+$(this).attr('data-id'),
+            type:"POST",
+            data:{},
+            success:function(data){
+                console.log(data);
+                data = JSON.parse(data);
+                var car = data.car;
+                var photos = data.photos;
+                var specification = data.specification;
+                var equipment = data.equipment;
+                $("#carousel > .carousel-indicators").html("");
+                $("#carousel > .carousel-inner").html("")
+                $("#spects").html("");
+                $("#spects").append("<li>Marca: "+specification['marca']+"</li>" +
+                        "<li>Modelo:"+specification.modelo+"</li>" +
+                        "<li>Versión:"+specification.version+"</li>" +
+                        "<li>Año: "+specification.anio+"</li>" +
+                        "<li>Tipo vehículo: "+specification.tipo_vehiculo+"</li>" +
+                        "<li>Carrocería: "+specification.carroceria+"</li>" +
+                        "<li>Kilometraje: "+specification.kilometraje+"</li>" +
+                        "<li>Cilindrada : "+specification.cilindrada+" c.c.</li>");
+                $("#equip").html("");
+                $("#equip").append("<li>Transmisión: "+equipment.transmision+"</li>" +
+                        "<li>Dirección:"+equipment.direccion+"</li>" +
+                        "<li>Aire: "+equipment.aire+"</li>" +
+                        "<li>Radio: "+equipment.radio+"</li>" +
+                        "<li>Alzavidrios: "+equipment.alzavidrios+"</li>" +
+                        "<li>Espejos: "+equipment.espejos+"</li>" +
+                        "<li>Frenos: "+equipment.frenos+"</li>" +
+                        "<li>Airbag: "+equipment.airbag+"</li>" +
+                        "<li>Cierre: "+equipment.cierre+"</li>" +
+                        "<li>Catalítico: "+equipment.catalitico+"</li>" +
+                        " <li>Combustible: "+equipment.combustible+"</li>" +
+                        "<li>Llantas: "+equipment.llantas+"</li>" +
+                        "<li>Puertas: "+equipment.puertes+"</li>" +
+                        "<li>Alarma: "+equipment.alarma+"</li>");
+                $("#price").html("");
+                $("#price").append("Precio $ "+car.price)
+                for(var i = 0;i<photos.length;i++){
+                    if(i==0){
+                        $("#carousel > .carousel-indicators").append('<li data-target="#carousel" data-slide-to="'+i+'" class="active"></li>');
+                        $("#carousel > .carousel-inner").append('<div class="item active">' +
+                                '<img src="autos/'+photos[i].name+'" alt="auto1" class="img-rounded">' +
+                                '<div class="carousel-caption">' +
+                                '</div>' +
+                                '</div>')
+                    }
+                    else {
+                        $("#carousel > .carousel-indicators").append('<li data-target="#carousel" data-slide-to="' + i + '"></li>')
+                        $("#carousel > .carousel-inner").append('<div class="item">' +
+                                '<img src="autos/'+photos[i].name+'" alt="auto1" class="img-rounded">' +
+                                '<div class="carousel-caption">' +
+                                '</div>' +
+                                '</div>')
+                    }
+                }
 
-
+            }
+        });
+        $("#details").modal('show');
+    });
+</script>
 
 <script type="text/javascript">
     $('li > a').click(function () {
