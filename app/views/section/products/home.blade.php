@@ -58,6 +58,7 @@
             data:{},
             success:function(data){
                 console.log(data);
+                data = JSON.parse(data);
                 var car = data.car;
                 var photos = data.photos;
                 var specification = data.specification;
@@ -65,7 +66,7 @@
                 $("#carousel > .carousel-indicators").html("");
                 $("#carousel > .carousel-inner").html("")
                 $("#spects").html("");
-                $("#spects").append("<li>Marca: "+specification.marca+"</li>" +
+                $("#spects").append("<li>Marca: "+specification['marca']+"</li>" +
                         "<li>Modelo:"+specification.modelo+"</li>" +
                         "<li>Versión:"+specification.version+"</li>" +
                         "<li>Año: "+specification.anio+"</li>" +
