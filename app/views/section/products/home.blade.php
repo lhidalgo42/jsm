@@ -36,9 +36,9 @@
 
                         ?>
                             @if($photo)
-                            <img class="img-responsive" src="/autos/{{$photo->name}}" alt="" style="height: 317;width: 210;">
+                            <img class="img-responsive" src="/autos/{{$photo->name}}{{Image::path('/autos/'.$photo->name, 'resize', 317, 238, 1)}}" alt="">
                             @else
-                            <img class="img-responsive" src="/images/imagen_no_disponible.jpg" alt="" style="height: 317;width: 210;">
+                            <img class="img-responsive" src="/images/imagen_no_disponible.jpg{{Image::path('/images/imagen_no_disponible.jpg', 'resize', 317, 238, 1)}}" alt="">
                             @endif
                         </li>
                     </ul>
@@ -68,21 +68,10 @@
                         <div id="carousel" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
-
-                                <li data-target="#carousel" data-slide-to="1"></li>
-                                <li data-target="#carousel" data-slide-to="2"></li>
-                                <li data-target="#carousel" data-slide-to="3"></li>
-                                <li data-target="#carousel" data-slide-to="4"></li>
                             </ol>
 
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <img src="/images/imagen_no_disponible.jpg" alt="auto1" class="img-rounded">
-
-                                    <div class="carousel-caption">
-                                    </div>
-                                </div>
                             </div>
                             <!-- Controls -->
                             <bu class="left carousel-control" href="#carousel" role="button"
@@ -100,32 +89,9 @@
                     <div class="col-lg-4">
                         <h4 class="h4">Especificaciones Técnicas</h4>
                         <ul id="spects">
-                            <li>Marca: BMW</li>
-                            <li>Modelo: 320 IA</li>
-                            <li>Versión: SEDAN</li>
-                            <li>Año: 2011</li>
-                            <li>Tipo vehíc: Automóvil</li>
-                            <li>Carrocería: Sedán</li>
-                            <li>Kilometraje: 67.000</li>
-                            <li>Cilindrada : 2.000 c.c.</li>
                         </ul>
                         <h4 class="h4">Equipamiento</h4>
                         <ul id="equip">
-                            <li>Transmisión: Automática</li>
-                            <li>Dirección: Hidráulica</li>
-                            <li>Aire: Acondicionado</li>
-                            <li>Radio: SI</li>
-                            <li>Alzavidrios: Eléctricos</li>
-                            <li>Espejos: Eléctricos</li>
-                            <li>Frenos: ABS</li>
-                            <li>Airbag: SI</li>
-                            <li>Cierre: Centralizado</li>
-                            <li>Catalítico: SI</li>
-                            <li>Combustible: Bencina</li>
-                            <li>Llantas: SI</li>
-                            <li>Puertas: 4</li>
-                            <li>Alarma: SI</li>
-                            <li>Techo: Eléctrico</li>
                         </ul>
                         <h3 class="h3"><strong id="price">Precio $ 12.990.000</strong></h3>
                     </div>

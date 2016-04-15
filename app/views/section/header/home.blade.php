@@ -9,7 +9,8 @@ $image= 'autos/'.$photo->name;
     else{
         $image = 'images/5.jpg';
     }?>
-    <div id="parallax" class="parallax bgback bg" style="background-image: url({{$image}});"
+
+    <div id="parallax" class="parallax bgback bg" style="background-image: url({{$image}}{{Image::path($image, 'resize', 1349, 768, 1)}});width: 100%"
          data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20"></div>
 
 
