@@ -1,5 +1,15 @@
 <div id="page_header">
-    <div id="parallax" class="parallax bgback bg" style="background-image: url('images/5.jpg');"
+    <?php
+    $count = PhotoFile::all()->count();
+    if($count!=0){
+        $id = rand(0,$count);
+    $photo = PhotoFile::find($id);
+    $image= 'autos/'.$photo->name;
+    }
+    else{
+        $image = 'images/5.jpg';
+    }?>
+    <div id="parallax" class="parallax bgback bg" style="background-image: url({{$image}});"
          data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20"></div>
 
 
