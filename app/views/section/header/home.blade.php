@@ -16,6 +16,7 @@
     <div class="container text-center header-part">
         <h2 class="header-text" style="font-size: 40px;"><span class="rotate">Una Familia Comprometida,Nuestro Compromiso no termina Aqui</span>
         </h2>
+        <h2 class="header-text"><small style="color: whitesmoke;"><strong>Pagamos al Contado</strong></small></h2>
 
         <div class="angle-down">
             <a href="#Practice_Area">
