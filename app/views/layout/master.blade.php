@@ -46,6 +46,12 @@
     <!-- Enable media queries on older bgeneral_rowsers -->
     <!--[if lt IE 9]>
     <script src="/js/respond.min.js"></script>  <![endif]-->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/js/jquery.nav.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/rotator.js"></script>
     <style>li{
             line-height:  1.3;
         }
@@ -77,18 +83,14 @@
 @yield('content')
 
 <!-- Main Scripts-->
-<script src="/js/jquery.js"></script>
+
 <script>
     $(".portfolio-items > div > ul > li > div > button").click(function () {
         $("#modalTitle").html($(this).parent().children('h3').html());
         $("#details").modal('show');
     });
 </script>
-<script src="/js/bootstrap.js"></script>
-<script src="/js/custom.js"></script>
-<script src="/js/jquery.nav.js"></script>
-<script src="/js/wow.min.js"></script>
-<script src="/js/rotator.js"></script>
+
 
 
 <script type="text/javascript">
@@ -157,6 +159,16 @@
             $('.navbar-toggle:visible').click();
         });
     });
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-76042355-1', 'auto');
+    ga('send', 'pageview');
+
 </script>
 
 </body>

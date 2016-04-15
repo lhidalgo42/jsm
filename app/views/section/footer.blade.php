@@ -1,8 +1,8 @@
 <footer class="footer">
     <div class="container">
         <div class="widget col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="title">
-                <h3>Acerca de <span>JSMAutos</span></h3>
+           <!-- <div class="title">
+                <h3>Acerca de <span style="color: #bc1a02">JSMAUTOS</span></h3>
             </div>
             <br>
 
@@ -12,7 +12,9 @@
             <p>On the other hand, we denounce with rious indignation and dislike men who are so be guiled
                 and
                 demoralized by the charms that they cannot foresee the pain</p>
-        </div><!-- end widget -->
+                <!-- end widget -->
+            <img src="images/logo.png" style="width: 100%;padding-top: 100px;">
+        </div>
 
         <div class="widget col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="title">
@@ -20,7 +22,7 @@
             </div>
             <div class="contact_widget row">
                 <div id="message"></div>
-                <form id="contactform" action="contact.php" name="contactform" method="post">
+                <form id="contactform"  name="contactform" action="/sendmail" method="post">
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <input type="text" name="name" id="name" required="required" class="form-control"
                                placeholder="Nombre">
@@ -32,7 +34,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <input type="text" name="subject" id="subject" required="required"
                                class="form-control"
-                               placeholder="Asuntu">
+                               placeholder="Asunto">
                     </div>
 
                     <div class="clearfix"></div>
@@ -47,6 +49,18 @@
                         </button>
                     </div>
                 </form>
+
+                <script>
+                /*    function validateFormOnSubmit() {
+                        var reason = "mailto:ventas@jsmautos.cl?subject=";
+                        reason += $("#subject").val()+"&body=";
+                        reason += $("#comments").val();
+                        console.log(reason);
+                        var win = window.open(reason, '_blank');
+                        win.focus();
+                        return false;
+                    } */
+                </script>
             </div> <!-- end contact_widget -->
         </div><!-- end widget -->
 
@@ -58,7 +72,7 @@
                 <li><i class="fa fa-map-marker"></i>
                     <span>Pedro Aguirre Cerda 4700, Cerrillos, Santiago</span></li>
                 <li><i class="fa fa-mobile-phone"></i> <span>(+ 56) 94-258-5505</span></li>
-                <li><i class="fa fa-envelope"></i> <span>ventas@jsmautos.com</span></li>
+                <li><i class="fa fa-envelope"></i> <span>ventas@jsmautos.cl</span></li>
             </ul>
             <div class="social pull-left">
                 <span><a title="Twitter" href="#"><i class="fa fa-twitter"></i></a></span>

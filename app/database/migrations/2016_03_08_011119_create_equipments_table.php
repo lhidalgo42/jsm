@@ -16,20 +16,20 @@ class CreateEquipmentsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->integer('cars_id');
-			$table->string('transmision');
-			$table->string('direccion');
-			$table->string('aire');
-			$table->string('radio');
-			$table->string('alzavidrios');
-			$table->string('espejos');
-			$table->string('frenos');
-			$table->string('airbag');
-			$table->string('cierre');
-			$table->string('catalitico');
-			$table->string('combustible');
-			$table->string('llantas');
-			$table->integer('puertas');
-			$table->string('alarma');
+			$table->string('transmision')->nullable();
+			$table->string('direccion')->nullable();
+			$table->string('aire')->nullable();
+			$table->string('radio')->nullable();
+			$table->string('alzavidrios')->nullable();
+			$table->string('espejos')->nullable();
+			$table->string('frenos')->nullable();
+			$table->string('airbag')->nullable();
+			$table->string('cierre')->nullable();
+			$table->string('catalitico')->nullable();
+			$table->string('combustible')->nullable();
+			$table->string('llantas')->nullable();
+			$table->integer('puertas')->nullable();
+			$table->string('alarma')->nullable();
 			$table->timestamps();
 		});
 	}

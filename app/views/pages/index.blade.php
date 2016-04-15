@@ -5,7 +5,7 @@
         @include('section.header.home')
 
         <div class="white-wrapper">
-                @include('section.lead.home')
+
                 @include('section.products.home')
             <br>
             <br>

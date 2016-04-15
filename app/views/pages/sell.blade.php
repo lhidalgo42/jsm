@@ -5,7 +5,6 @@
         @include('section.header.home')
 
         <div class="white-wrapper">
-            @include('section.lead.home')
             @include('section.sell')
                     <!--End Faq -->
 

@@ -16,8 +16,18 @@ class CreateCarsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->integer('price');
+			$table->string('patente');
 			$table->integer('visitas');
 			$table->boolean('active');
+			$table->string('name');
+			$table->string('email');
+			$table->string('phone');
+			$table->string('rut');
+			$table->string('tipodeventa');
+			$table->integer('duenos');
+			$table->string('papeles');
+			$table->string('pintura');
+			$table->text('comentario');
 			$table->timestamps();
 		});
 	}

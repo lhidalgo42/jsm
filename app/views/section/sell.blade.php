@@ -5,27 +5,32 @@
             margin-bottom: 3em;
         }
     </style>
-    {{Form::open(array('url' => '/new/car', 'files' => true))}}
+    {{Form::open(array('url' => '/create/car', 'files' => true))}}
     <div class="row">
         <h4 class="h4"><strong>Datos Personales</strong></h4>
-
         <div class="col-md-4">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" value="{{Input::old('name')}}">
         </div>
         <div class="col-md-4">
-            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Telefono">
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Telefono" value="{{Input::old('phone')}}">
         </div>
         <div class="col-md-4">
-            <input type="text" class="form-control" id="telefono2" name="telefono2" placeholder="Confirme Telefono">
+            <input type="text" class="form-control" id="phone2" name="phone2" placeholder="Confirme Telefono" value="{{Input::old('phone2')}}">
         </div>
         <div class="col-md-4">
-            <input class="form-control" type="text" id="rut" name="rut" placeholder="RUT">
+            <input class="form-control" type="text" id="rut" name="rut" placeholder="RUT" value="{{Input::old('rut')}}">
         </div>
         <div class="col-md-4">
-            <input class="form-control" type="email" id="email" name="email" placeholder="Direcion de Correo">
+            <input class="form-control" type="email" id="email" name="email" placeholder="Direcion de Correo" value="{{Input::old('email')}}">
         </div>
         <div class="col-md-4">
-            <input class="form-control" type="email" id="email2" name="email2" placeholder="Confirme Direcion de Correo">
+            <input class="form-control" type="email" id="email2" name="email2" placeholder="Confirme Direcion de Correo" value="{{Input::old('email2')}}">
+        </div>
+        <div class="col-md-4">
+            <input type="text" id="patente" name="patente" class="form-control" placeholder="Patente" value="{{Input::old('patente')}}">
+        </div>
+        <div class="col-md-4">
+            <input type="number" class="form-control" name="price" id="precio" placeholder="Precio" value="{{Input::old('precio')}}">
         </div>
     </div>
     <div class="row">
@@ -231,18 +236,18 @@
             </select>
         </div>
         <div class="col-md-4">
-            <input type="text" id="modelo" class="form-control" placeholder="Modelo">
+            <input type="text" id="modelo" name="modelo" class="form-control" placeholder="Modelo">
         </div>
         <div class="col-md-4">
-            <input type="text" id="version" class="form-control" placeholder="Versión">
+            <input type="text" id="version" name="version" class="form-control" placeholder="Versión">
         </div>
     </div>
     <div class="row">
         <div class="col-md-4">
-            <input type="number" id="anio" class="form-control" placeholder="Año">
+            <input type="number" id="anio" name="anio"class="form-control" placeholder="Año" value="{{Input::old('anio')}}">
         </div>
         <div class="col-md-4">
-            <select id="tipo" name="tipo" class="form-control">
+            <select id="tipo_vehiculo" name="tipo_vehiculo" class="form-control">
                 <option>Seleccion Tipo</option>
                 <option value="Automovil">Automovil</option>
                 <option value="Camioneta">Camioneta</option>
@@ -271,17 +276,20 @@
     </div>
     <div class="row">
         <div class="col-md-4">
-            <input type="text" id="cilindrada" class="form-control" placeholder="cilindrada">
+            <input type="text" id="cilindrada" name="cilindrada" class="form-control" placeholder="cilindrada" value="{{Input::old('cilindrada')}}">
         </div>
         <div class="col-md-4">
-            <input type="number" min="0" id="kilometraje" placeholder="Kilometraje" class="form-control">
+            <input type="number" min="0" id="kilometraje" name="kilometraje" placeholder="Kilometraje" class="form-control" value="{{Input::old('kilometraje')}}">
+        </div>
+        <div class="col-md-4">
+            <input type="text" id="color" name="color" placeholder="Color" class="form-control" value="{{Input::old('color')}}">
         </div>
     </div>
     <div class="row">
         <h4 class="h4"><strong>Especificaciones del Vehículo</strong></h4>
 
         <div class="col-md-4">
-            <select id="transmision" name="carroceria" class="form-control">
+            <select id="transmision" name="transmision" class="form-control">
                 <option value="">Transmision</option>
                 <option value="Automatica">Automatica</option>
                 <option value="Manual">Manual</option>
@@ -298,7 +306,7 @@
             </select>
         </div>
         <div class="col-md-4">
-            <select id="aire" name="carroceria" class="form-control">
+            <select id="aire" name="aire" class="form-control">
                 <option value="">Aire Acondicionado</option>
                 <option value="Si">Si</option>
                 <option value="No">No</option>
@@ -371,7 +379,7 @@
         </div>
         <div class="col-md-4">
             <select id="llantas" name="llantas" class="form-control">
-                <option>Lantas</option>
+                <option>Llantas</option>
                 <option value="Si">Si</option>
                 <option value="No">No</option>
             </select>
@@ -379,7 +387,7 @@
     </div>
     <div class="row">
         <div class="col-md-4">
-            <input type="number" name="puertas" id="puertas" class="form-control" placeholder="Numero de Puertas">
+            <input type="number" name="puertas" id="puertas" class="form-control" placeholder="Numero de Puertas" value="{{Input::old('puertas')}}">
         </div>
         <div class="col-md-4">
             <select id="alarma" name="alarma" class="form-control">
@@ -392,14 +400,7 @@
 
 
 
-    <div class="row">
-        <div class="col-md-4">
-            <input type="text" id="patente" class="form-control" placeholder="Patente">
-        </div>
-        <div class="col-md-4">
-            <input type="number" class="form-control" id="precio" placeholder="Precio">
-        </div>
-    </div>
+
     <div class="row">
         <h4 class="h4"><strong>Estado del Vehiculo</strong></h4>
 
@@ -412,7 +413,7 @@
             </select>
         </div>
         <div class="col-md-3">
-            <input type="number" class="form-control" id="duenos" placeholder="Dueños Anteriores">
+            <input type="number" class="form-control" id="duenos" name="duenos" placeholder="Dueños Anteriores" value="{{Input::old('duenos')}}">
         </div>
         <div class="col-md-3">
             <select id="papeles" name="papeles" class="form-control">
@@ -435,12 +436,33 @@
 
     <div class="row">
         <div class="col-md-4">
-            <input type="file" class="form-control" name="foto" id="foto">
+            <input type="file" class="form-control" name="files[]" id="imgInp" multiple>
         </div>
-        <textarea class="form-control" placeholder="Escriba algun Comentario Acerca del Vehiculo" rows="6"></textarea>
+        <div class="col-md-8" id="preview">
+
+        </div>
     </div>
+        <textarea name="comentario" class="form-control" placeholder="Escriba algun Comentario Acerca del Vehiculo" rows="6">{{Input::old('comentario')}}</textarea>
     <button class="btn btn-lg f_button green">Enviar</button>
     </form>
+    <script>
+       /*function readURL(input) {
+            var reader;
+            if (input.files) {
+                $("#preview").html("");
+                for (var i = 0; i < input.files.length; i++) {
+                    reader = new FileReader();
+                    reader.onload = function (e) {
+                        $("#preview").append("<img src'" + e.target.result + "'>")
+                    }
+                    reader.readAsDataURL(input.files[i]);
+                }
+            }
+        }
+        $("#imgInp").change(function(){
+            readURL(this);
+        }); */
 
+    </script>
 </div>
 

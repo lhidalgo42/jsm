@@ -16,15 +16,15 @@ class CreateSpecificationsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->integer('cars_id');
-			$table->string('marca');
+			$table->string('marca')->nullable();
 			$table->string('modelo');
 			$table->string('version');
 			$table->integer('anio');
-			$table->string('tipo_vehiculo');
-			$table->string('carroceria');
+			$table->string('tipo_vehiculo')->nullable();
+			$table->string('carroceria')->nullable();
 			$table->string('color');
-			$table->integer('kilometraje');
-			$table->string('cilindrada');
+			$table->integer('kilometraje')->nullable();
+			$table->string('cilindrada')->nullable();
 			$table->timestamps();
 		});
 	}
