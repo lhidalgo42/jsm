@@ -14,6 +14,9 @@
                 demoralized by the charms that they cannot foresee the pain</p>
                 <!-- end widget -->
             <img src="images/logo.png" style="width: 100%;padding-top: 100px;">
+            <div class="title">
+            <h3>20 Años de Experiencia nos avalan.</h3>
+                </div>
         </div>
 
         <div class="widget col-lg-6 col-md-6 col-sm-6 col-xs-12">
