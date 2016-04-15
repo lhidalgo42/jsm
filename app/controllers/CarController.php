@@ -89,9 +89,7 @@ class CarController extends \BaseController
         foreach ($files as $file) {
             $ext = $file->getClientOriginalExtension();
             $name = generateRandomString() . "." . $ext;
-            $destinationPath = public_path() . '/autos/' . $car->id;
-            if (!File::isDirectory('/autos/' . $car->id)) {
-                File::makeDirectory('/autos/' . $car->id);
+            $destinationPath = public_path() . '/autos';
                 if ($ext == "png" || $ext == "PNG" || $ext == "jpg" || $ext == "JPG") {
                     $photo = new PhotoFile();
                     $photo->cars_id = $car->id;
@@ -104,7 +102,6 @@ class CarController extends \BaseController
             return Redirect::to('/')->with('success', 'Auto Agregado Exitosame, Pendiente de Aprovación');
 
         }
-    }
 
 
 

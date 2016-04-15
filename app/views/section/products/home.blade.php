@@ -36,7 +36,7 @@
 
                         ?>
                             @if($photo)
-                            <img class="img-responsive" src="/autos/{{$auto->id}}/{{$photo->name}}" alt="">
+                            <img class="img-responsive" src="/autos/{{$photo->name}}" alt="">
                             @else
                             <img class="img-responsive" src="/images/imagen_no_disponible.jpg" alt="">
                             @endif
