@@ -10,7 +10,7 @@ $image= 'autos/'.$photo->name;
         $image = 'images/5.jpg';
     }?>
 
-    <div id="parallax" class="parallax bgback bg" style="background-image: url({{$image}}{{Image::path($image, 'resizeCrop', 1349, 768, 1)}});width: 100%"
+    <div id="parallax" class="parallax bgback bg" style="background-image: url('{{$image}}') no-repeat;background-size: 100%;"
          data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20"></div>
 
 

@@ -37,11 +37,11 @@
                                 ?>
                                 @if($photo)
                                     <img class="img-responsive"
-                                         src="/autos/{{$photo->name}}{{Image::path('/autos/'.$photo->name, 'resizeCrop', 317, 238)}}"
+                                         src="/autos/{{$photo->name}}"
                                          alt="">
                                 @else
                                     <img class="img-responsive"
-                                         src="/images/imagen_no_disponible.jpg{{Image::path('/images/imagen_no_disponible.jpg', 'resizeCrop', 317, 238)}}"
+                                         src="/images/imagen_no_disponible.jpg"
                                          alt="">
                                 @endif
                             </li>
