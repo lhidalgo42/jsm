@@ -7,7 +7,7 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"laracasts/validation"                 : "~1.0",
-		"kevbaldwyn/image":"dev-master"
+		"intervention/image": "dev-master"
 	},
 	"require-dev": {
 		"way/generators": "2.*",

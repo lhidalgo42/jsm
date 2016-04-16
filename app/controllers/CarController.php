@@ -97,8 +97,10 @@ class CarController extends \BaseController
                     $photo->active = 1;
                     $photo->save();
                     $file->move($destinationPath, $name);
+                    $image = Image::make(sprintf($destinationPath.'/%s', $name))->resize(1366, 768)->save();
                 }
-            }
+
+        }
             return Redirect::to('/')->with('success', 'Auto Agregado Exitosame, Pendiente de Aprovación');
 
         }

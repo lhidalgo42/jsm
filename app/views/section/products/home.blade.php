@@ -9,40 +9,44 @@
         <div class="row">
             <div class="portfolio-items">
                 <?php
-                    $autos = Car::orderBy('visitas','DESC')->take(6)->get();
+                $autos = Car::orderBy('visitas', 'DESC')->take(6)->get();
                 ?>
                 @foreach($autos as $auto)
-                <div class="item-blog col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <ul>
-                        <?php
-                            $info = Specification::where('cars_id','=',$auto->id)->get()->first();
-                        ?>
-                        <li class="img_item">
-                            <div class="caption8 ctn_blue">
-                                <h3>{{$info->marca}} {{$info->modelo}}</h3>
-                                <ul>
-                                    <li>Año : {{$info->anio}}</li>
-                                    <li>Tipo Vehículo : {{$info->tipo_vehiculo}}</li>
-                                    <li>Carrocería : {{$info->carroceria}}</li>
-                                    <li>Kilometraje : {{$info->kilometraje}}</li>
-                                    <li>Cilindrada : {{$info->cilindrada}} cc</li>
-                                </ul>
-                                <button class="btn btn-lg pf_button green" data-id="{{$auto->id}}">Ver más
-                                    Detalles
-                                </button>
-                            </div>
+                    <div class="item-blog col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <ul>
                             <?php
-                            $photo = PhotoFile::where('cars_id','=',$auto->id)->take(1)->get()->first();
+                            $info = Specification::where('cars_id', '=', $auto->id)->get()->first();
+                            ?>
+                            <li class="img_item">
+                                <div class="caption8 ctn_blue">
+                                    <h3>{{$info->marca}} {{$info->modelo}}</h3>
+                                    <ul>
+                                        <li>Año : {{$info->anio}}</li>
+                                        <li>Tipo Vehículo : {{$info->tipo_vehiculo}}</li>
+                                        <li>Carrocería : {{$info->carroceria}}</li>
+                                        <li>Kilometraje : {{$info->kilometraje}}</li>
+                                        <li>Cilindrada : {{$info->cilindrada}} cc</li>
+                                    </ul>
+                                    <button class="btn btn-lg pf_button green" data-id="{{$auto->id}}">Ver más
+                                        Detalles
+                                    </button>
+                                </div>
+                                <?php
+                                $photo = PhotoFile::where('cars_id', '=', $auto->id)->take(1)->get()->first();
 
-                        ?>
-                            @if($photo)
-                            <img class="img-responsive" src="/autos/{{$photo->name}}{{Image::path('/autos/'.$photo->name, 'resize', 317, 238, 1)}}" alt="">
-                            @else
-                            <img class="img-responsive" src="/images/imagen_no_disponible.jpg{{Image::path('/images/imagen_no_disponible.jpg', 'resize', 317, 238, 1)}}" alt="">
-                            @endif
-                        </li>
-                    </ul>
-                </div>
+                                ?>
+                                @if($photo)
+                                    <img class="img-responsive"
+                                         src="/autos/{{$photo->name}}{{Image::path('/autos/'.$photo->name, 'resizeCrop', 317, 238)}}"
+                                         alt="">
+                                @else
+                                    <img class="img-responsive"
+                                         src="/images/imagen_no_disponible.jpg{{Image::path('/images/imagen_no_disponible.jpg', 'resizeCrop', 317, 238)}}"
+                                         alt="">
+                                @endif
+                            </li>
+                        </ul>
+                    </div>
                 @endforeach
             </div><!-- End of .portfolio-items -->
 
@@ -68,10 +72,22 @@
                         <div id="carousel" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
+                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel" data-slide-to="1"></li>
+                                <li data-target="#carousel" data-slide-to="2"></li>
                             </ol>
 
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="carousel-caption"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="carousel-caption"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="carousel-caption"></div>
+                                </div>
                             </div>
                             <!-- Controls -->
                             <bu class="left carousel-control" href="#carousel" role="button"
