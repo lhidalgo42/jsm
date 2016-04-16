@@ -436,7 +436,7 @@
 
     <div class="row">
         <div class="col-md-4">
-            <input type="file" class="form-control" name="files[]" id="imgInp" multiple>
+            <input type="file" class="form-control" name="files[]" id="files" multiple>
         </div>
         <div class="col-md-8" id="preview">
 
@@ -445,24 +445,5 @@
         <textarea name="comentario" class="form-control" placeholder="Escriba algun Comentario Acerca del Vehiculo" rows="6">{{Input::old('comentario')}}</textarea>
     <button class="btn btn-lg f_button green">Enviar</button>
     </form>
-    <script>
-       /*function readURL(input) {
-            var reader;
-            if (input.files) {
-                $("#preview").html("");
-                for (var i = 0; i < input.files.length; i++) {
-                    reader = new FileReader();
-                    reader.onload = function (e) {
-                        $("#preview").append("<img src'" + e.target.result + "'>")
-                    }
-                    reader.readAsDataURL(input.files[i]);
-                }
-            }
-        }
-        $("#imgInp").change(function(){
-            readURL(this);
-        }); */
-
-    </script>
 </div>
 

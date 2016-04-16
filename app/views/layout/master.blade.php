@@ -88,6 +88,32 @@
 <script type="text/javascript">
     Imagecow.init();
 </script>
+<script>
+
+    function handleFileSelect(evt){
+        $("#preview").html("");
+        var files = evt.files;
+
+        for(var i = 0,f; f = files[i];i++){
+            if(!f.type.match('image.*')){
+                continue;
+            }
+            var reader = new FileReader();
+
+            reader.onload = (function(theFile) {
+                return function(e) {
+                    $("#preview").append('<div class="col-xs-3"><img style="width: 100%;padding-bottom: 15px;" class="img-rounded" ' +
+                            'src="'+e.target.result+ '" title=' + escape(theFile.name)+ '"/></div>');
+
+                };
+            })(f);
+            reader.readAsDataURL(f);
+        }
+    }
+    $("#files").change(function(){
+        handleFileSelect(this);
+    })
+</script>
 
 
 <script>
