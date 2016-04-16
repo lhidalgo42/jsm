@@ -97,7 +97,7 @@ class CarController extends \BaseController
                     $photo->active = 1;
                     $photo->save();
                     $file->move($destinationPath, $name);
-                    $image = Image::make(sprintf($destinationPath.'/%s', $name))->resize(1600, 900)->save();
+                    $image = Image::make(sprintf($destinationPath.'/%s', $name))->resize(1600, 1200)->save();
                 }
 
         }
