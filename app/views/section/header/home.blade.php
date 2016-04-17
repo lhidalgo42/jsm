@@ -1,15 +1,16 @@
 <div id="page_header">
     <?php
-    $count = PhotoFile::all()->count();
+    $photos = PhotoFile::lists('id','name');
+    $count = count($photos);
     if($count!=0){
-        $id = rand(1,$count);
-    $photo = PhotoFile::find($id);  
+        $id = rand(0,$count);
+    $photo = $photos[$id];
 $image= '/autos/'.$photo->name;
     }
     else{
         $image = '/images/5.jpg';
-    }?>
-
+    }
+        ?>
     <div id="parallax" class="parallax bgback bg" style="background: url('{{$image}}') no-repeat;background-size: 100%;"
          data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20"></div>
 
