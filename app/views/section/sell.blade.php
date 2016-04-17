@@ -38,7 +38,7 @@
 
         <div class="col-md-4">
             <select id="marca" name="marca" class="form-control">
-                <option>Seleccione Marca</option>
+                <option value="No Especificado">Seleccione Marca</option>
                 <option value="ACADIAN ">ACADIAN</option>
                 <option value="ACURA">ACURA</option>
                 <option value="ALFA ROMEO ">ALFA ROMEO</option>
@@ -248,7 +248,7 @@
         </div>
         <div class="col-md-4">
             <select id="tipo_vehiculo" name="tipo_vehiculo" class="form-control">
-                <option>Seleccion Tipo</option>
+                <option value="No Especificado">Seleccion Tipo</option>
                 <option value="Automovil">Automovil</option>
                 <option value="Camioneta">Camioneta</option>
                 <option value="Furgon">Furgon</option>
@@ -258,7 +258,7 @@
         </div>
         <div class="col-md-4">
             <select id="carroceria" name="carroceria" class="form-control">
-                <option>Carroceria</option>
+                <option value="No Especificado">Carroceria</option>
                 <option value="Sedán ">Sedán</option>
                 <option value="Station wagon ">Station wagon</option>
                 <option value="SUV ">SUV</option>
@@ -290,7 +290,7 @@
 
         <div class="col-md-4">
             <select id="transmision" name="transmision" class="form-control">
-                <option value="">Transmision</option>
+                <option value="No Especificado">Transmision</option>
                 <option value="Automatica">Automatica</option>
                 <option value="Manual">Manual</option>
 
@@ -298,7 +298,7 @@
         </div>
         <div class="col-md-4">
             <select id="direccion" name="direccion" class="form-control">
-                <option value="">Dirección</option>
+                <option value="No Especificado">Dirección</option>
                 <option value="Asistida ">Asistida</option>
                 <option value="Hidraulica ">Hidraulica</option>
                 <option value="Mecanica ">Mecanica</option>
@@ -307,7 +307,7 @@
         </div>
         <div class="col-md-4">
             <select id="aire" name="aire" class="form-control">
-                <option value="">Aire Acondicionado</option>
+                <option value="No Especificado">Aire Acondicionado</option>
                 <option value="Si">Si</option>
                 <option value="No">No</option>
             </select>
@@ -316,21 +316,21 @@
     <div class="row">
         <div class="col-md-4">
             <select id="radio" name="radio" class="form-control">
-                <option value="">Radio</option>
+                <option value="No Especificado">Radio</option>
                 <option value="Si">Si</option>
                 <option value="No">No</option>
             </select>
         </div>
         <div class="col-md-4">
             <select id="alzavidrios" name="alzavidrios" class="form-control">
-                <option value="">Alzavidrios Electrico</option>
+                <option value="No Especificado">Alzavidrios Electrico</option>
                 <option value="Si">Si</option>
                 <option value="No">No</option>
             </select>
         </div>
         <div class="col-md-4">
             <select id="espejos" name="espejos" class="form-control">
-                <option value="">Espejos Electricos</option>
+                <option value="No Especificado">Espejos Electricos</option>
                 <option value="Si">Si</option>
                 <option value="No">No</option>
             </select>
@@ -339,21 +339,21 @@
     <div class="row">
         <div class="col-md-4">
             <select id="frenos" name="frenos" class="form-control">
-                <option value="">Posee ABS</option>
+                <option value="No Especificado">Posee ABS</option>
                 <option value="Si">Si</option>
                 <option value="No">No</option>
             </select>
         </div>
         <div class="col-md-4">
             <select id="airbag" name="airbag" class="form-control">
-                <option>Posee Airbag</option>
+                <option value="No Especificado">Posee Airbag</option>
                 <option value="Si">Si</option>
                 <option value="No">No</option>
             </select>
         </div>
         <div class="col-md-4">
             <select id="cierre" name="cierre" class="form-control">
-                <option>Posee Cierre Centralizado</option>
+                <option value="No Especificado">Posee Cierre Centralizado</option>
                 <option value="Si">Si</option>
                 <option value="No">No</option>
             </select>
@@ -362,14 +362,14 @@
     <div class="row">
         <div class="col-md-4">
             <select id="catalitico" name="catalitico" class="form-control">
-                <option>Catalitico</option>
+                <option value="No Especificado">Catalitico</option>
                 <option value="Si">Si</option>
                 <option value="No">No</option>
             </select>
         </div>
         <div class="col-md-4">
             <select id="combustible" name="combustible" class="form-control">
-                <option>Tipo de Combustible</option>
+                <option value="No Especificado">Tipo de Combustible</option>
                 <option value="Bencina ">Bencina</option>
                 <option value="Diesel ">Diesel</option>
                 <option value="Gas ">Gas</option>
@@ -379,7 +379,7 @@
         </div>
         <div class="col-md-4">
             <select id="llantas" name="llantas" class="form-control">
-                <option>Llantas</option>
+                <option value="">Llantas</option>
                 <option value="Si">Si</option>
                 <option value="No">No</option>
             </select>
@@ -391,7 +391,7 @@
         </div>
         <div class="col-md-4">
             <select id="alarma" name="alarma" class="form-control">
-                <option>Posee Alarma</option>
+                <option value="No Especificado">Posee Alarma</option>
                 <option value="Si">Si</option>
                 <option value="No">No</option>
             </select>
@@ -406,7 +406,7 @@
 
         <div class="col-md-3">
             <select id="tipodeventa" name="tipodeventa" class="form-control">
-                <option>Estado del Vehiculo</option>
+                <option value="No Especificado">Estado del Vehiculo</option>
                 <option value="Normal" selected="selected">En buen Estado</option>
                 <option value="reparacion">Chocado para Reparación</option>
                 <option value="desarme">Chocado para Desarme</option>
@@ -417,14 +417,14 @@
         </div>
         <div class="col-md-3">
             <select id="papeles" name="papeles" class="form-control">
-                <option>Estado de los Papeles</option>
+                <option value="No Especificado">Estado de los Papeles</option>
                 <option value="1">Al dia</option>
                 <option value="2">No al dia</option>
             </select>
         </div>
         <div class="col-md-3">
             <select id="pintura" name="pintura" class="form-control">
-                <option value="Estado de la Pintura"></option>
+                <option value="No Especificado">Estado de la Pintura</option>
                 <option value="Pintura Original" selected="selected">Pintura Original</option>
                 <option value="Repintado 30%">Repintado 30%</option>
                 <option value="Repintado 50%">Repintado 50%</option>
