@@ -38,7 +38,7 @@ class CarController extends \BaseController
         if (Input::get('email') != Input::get('email2')) {
             return Redirect::back()->withInput()->with('error', 'Los Correos No Conciden');
         }
-
+	//return Input::all();
         $car = new Car();
         $car->name = Input::get('name');
         $car->phone = Input::get('phone');
