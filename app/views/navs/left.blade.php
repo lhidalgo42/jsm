@@ -13,7 +13,7 @@
                          <a href="/sell#sell">Agregar Autos</a>
                     </li>
                     <li>
-                        <a href="$/car/list">Editar Autos</a>
+                        <a href="#/car/list">Editar Autos</a>
                     </li>
                     <li>
                         <a href="/accept">Acceptar Publicaciones</a>
