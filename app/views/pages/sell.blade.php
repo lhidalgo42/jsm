@@ -4,7 +4,7 @@
         @include('section.nav.sell')
         @include('section.header.home')
 
-        <div class="white-wrapper">
+        <div class="white-wrapper" id="sell">
             @include('section.sell')
                     <!--End Faq -->
 
