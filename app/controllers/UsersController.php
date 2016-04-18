@@ -9,10 +9,10 @@ class UsersController extends \BaseController
         return View::make('admin.index')->with(compact('cars'));
     }
 
-    public function views()
+    public function accept()
     {
         $cars = Car::all();
-        return View::make('admin.views')->with(compact('cars'));
+        return View::make('admin.accept')->with(compact('cars'));
     }
 
 }

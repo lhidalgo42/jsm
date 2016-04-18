@@ -24,4 +24,5 @@ Route::post('/create/car','CarController@create');
 Route::group(array('before' => 'auth'), function() {
     Route::get('/admin', ['as' => 'admin', 'uses' => 'UsersController@admin']);
     Route::get('/edit','UsersController@edit');
+    Route::get('/accept','UsersController@accept');
 });

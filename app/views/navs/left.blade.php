@@ -16,13 +16,10 @@
                         <a href="/car/list">Editar Autos</a>
                     </li>
                     <li>
-                        <a href="/acceptance">Publicaciones</a>
+                        <a href="/accept">Acceptar Publicaciones</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
-            </li>
-            <li>
-                <a href="/views"><i class="fa fa-users"></i> Visitas de Autos</a>
             </li>
             <li>
                 <a href="/logout"><i class="fa fa-sign-out"></i> Cerrar Sesión </a>

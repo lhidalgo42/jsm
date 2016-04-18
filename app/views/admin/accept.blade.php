@@ -23,16 +23,19 @@
                 <table class="table table-bordered">
                     <tr>
                         <th>Nombre</th>
-                        <th>Visitas</th>
-                        <th>Fecha Creación</th>
+                        <th>Estado</th>
                     </tr>
                     <tbody>
                         @foreach($cars as $car)
                             <?php $spec = Specification::find($car->id); ?>
                         <tr>
                             <td>{{$spec->marca}} {{$spec->modelo}} - {{$spec->version}}</td>
-                            <td>{{$car->visitas}}</td>
-                            <td>{{$car->created_at}}</td>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" data-val="SI" car="{{$car->id}}" class="btn btn-default @if($car->estado == 1) active @endif">SI</button>
+                                    <button type="button" data-val="NO" car="{{$car->id}}" class="btn btn-default @if($car->estado == 0) active @endif">NO</button>
+                                </div>
+                            </td>
                         </tr>
                         @endforeach
                     </tbody>
