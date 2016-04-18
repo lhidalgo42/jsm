@@ -32,8 +32,8 @@
                             <td>{{$spec->marca}} {{$spec->modelo}} - {{$spec->version}}</td>
                             <td>
                                 <div class="btn-group" role="group" aria-label="...">
-                                    <button type="button" data-val="SI" car="{{$car->id}}" class="btn btn-default @if($car->estado == 1) active @endif">SI</button>
-                                    <button type="button" data-val="NO" car="{{$car->id}}" class="btn btn-default @if($car->estado == 0) active @endif">NO</button>
+                                    <button type="button" data-val="SI" car="{{$car->id}}" class="btn btn-default @if($car->active == 1) active @endif">SI</button>
+                                    <button type="button" data-val="NO" car="{{$car->id}}" class="btn btn-default @if($car->active == 0) active @endif">NO</button>
                                 </div>
                             </td>
                         </tr>
