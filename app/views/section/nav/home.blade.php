@@ -18,7 +18,7 @@
                             <li><a href="#products" title="">Vehículos</a></li>
                             <li><a href="#faq" title="">Preguntas Frecuentes</a></li>
                             <li><a href="#contact" title="">Contacto</a></li>
-                            <li><a href="/sell" title="">Venda su Auto</a></li>
+                            <li><a href="/sell" title="" style="color: black !important;">Venda su Auto</a></li>
                         </ul>
                     </div><!-- end navbar-collapse collapse -->
                 </div><!-- nav -->
