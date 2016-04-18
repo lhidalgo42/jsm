@@ -986,7 +986,8 @@ border: 0px solid transparent !important;
 	.navbar-default .navbar-nav > .open > a:focus,
 	.header .nav li a:hover,
 	.header .nav li a:focus {
-		color:#B5F1E3;
+		font-weight: bold;
+		color: #241ef1;
 	}
 	
 	p.drop-caps.full:first-child:first-letter,
