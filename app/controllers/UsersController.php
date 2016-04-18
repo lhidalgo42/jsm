@@ -5,7 +5,7 @@ class UsersController extends \BaseController
 
     public function admin()
     {
-        $cars = Car::all();
+        $cars = Car::orderBy('visitas','DESC')->get();
         return View::make('admin.index')->with(compact('cars'));
     }
 
