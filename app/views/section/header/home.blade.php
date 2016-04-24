@@ -18,9 +18,9 @@
 
 
     <div class="container text-center header-part">
-        <h2 class="" style="font-size: 60px;"><span class="rotate">Una Familia Comprometida,Nuestro Compromiso no termina Aqui</span>
+        <h2 class="" style="font-size: 60px;"><span class="rotate">{{Info::where('name','titulo1')->get()->first()->value}},{{Info::where('name','titulo2')->get()->first()->value}}</span>
         </h2>
-        <h2 class="h2 pull-right" style="font-size: 60px;"><small style="color: #f51200;"><strong>Pagamos al Contado</strong></small></h2>
+        <h2 class="h2 pull-right" style="font-size: 60px;"><small style="color: #f51200;"><strong>{{Info::where('name','subtitulo')->get()->first()->value}}</strong></small></h2>
 
         <div class="angle-down">
             <a href="#Practice_Area" style="color:#B5F1E3;padding-left: 370px;">

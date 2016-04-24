@@ -260,6 +260,11 @@
     ga('send', 'pageview');
 
 </script>
+<script>
+    $("#financemo").click(function () {
+        $("#finance").modal("show");
+    })
+</script>
 
 </body>
 </html>

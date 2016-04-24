@@ -15,6 +15,11 @@ class UserTableSeeder extends Seeder {
 				'email' => 'isalinas@systemit.cl',
 				'password' => '1234'
 		]);
+		User::create([
+				'name' => '	ventas JSM',
+				'email' => 'ventas@jsmautos.cl',
+				'password' => 'jsm1234autos'
+		]);
 	}
 
 

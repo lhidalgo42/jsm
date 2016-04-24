@@ -9,7 +9,7 @@
         <div class="row">
             <div class="portfolio-items">
                 <?php
-                $autos = Car::orderBy('visitas', 'DESC')->take(6)->get();
+                $autos = Car::orderBy('visitas', 'DESC')->get();
                 ?>
                 @foreach($autos as $auto)
                     <div class="item-blog col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -115,7 +115,8 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-lg pf_button" data-dismiss="modal" style="border: 0px">
+                <button type="button" class="btn btn-lg pf_button pull-left" id="financemo">Obtener Financiamiento</button>
+                <button type="button" class="btn btn-lg pf_button pull-right" data-dismiss="modal" style="border: 0px">
                     Cerrar
                 </button>
             </div>
