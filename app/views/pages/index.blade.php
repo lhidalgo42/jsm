@@ -16,6 +16,7 @@
 
             @include('section.faq')
             <!--End Faq -->
+            @include('modals.finance')
 
             <!-- Contact -->
 
