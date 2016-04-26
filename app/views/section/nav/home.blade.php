@@ -10,7 +10,7 @@
                             <i class="fa fa-bars fa-2x"></i>
                         </button>
                         <a id="brand" class="navbar-brand" href="#"><img src="images/logo.png" alt="Law"
-                                                                         style="width: 220px;"></a>
+                                                                         style="width: 250px;"></a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right" id="nav">
