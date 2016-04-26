@@ -1,6 +1,13 @@
 <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" id="finance">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
+            {{Form::open(array('url' => '/create/finance'))}}
+            <style>
+                select{
+                    margin: auto;
+                    margin-bottom: 3em;
+                }
+            </style>
             <div class="modal-header">
                 <div class="row" style="padding-left: 15px;padding-right: 15px;margin-bottom: -25px;">
                     <h4 class="pull-left" id="modalTitle">Modal title</h4>
@@ -9,6 +16,7 @@
                 </div>
             </div>
             <div class="modal-body">
+
                 <div class="row">
 
                 <div class="col-md-6">
@@ -211,13 +219,23 @@
 
 
                 </div>
+                <div class="row">
+                    <div class="col-xs-3"><img src="/images/bancofalabella.png" alt="" style="width: 100%"></div>
+                    <div class="col-xs-3"><img src="/images/Abcdin_New_Logo.svg" alt="" style="width: 100%"></div>
+                    <div class="col-xs-3"><img src="/images/Logo-tanner.jpg" alt="" style="width: 100%"></div>
+                    <div class="col-xs-3"><img src="/images/credito-directo.png" alt="" style="width: 100%"></div>
+                </div>
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-lg pf_button" data-dismiss="modal" style="border: 0px">
+                <button type="submit" class="btn btn-lg btn-success pull-left"  style="border: 0px">
+                    Guardar
+                </button>
+                <button type="button" class="btn btn-lg pull-right" data-dismiss="modal" style="border: 0px">
                     Cerrar
                 </button>
             </div>
+            </form>
         </div><!-- end modal_content -->
     </div> <!-- end modal dialog -->
 </div> <!-- end modal -->

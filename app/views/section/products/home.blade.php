@@ -115,8 +115,8 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-lg pf_button pull-left" id="financemo">Obtener Financiamiento</button>
-                <button type="button" class="btn btn-lg pf_button pull-right" data-dismiss="modal" style="border: 0px">
+                <button type="button" class="btn btn-primary pull-left" id="financemo">Obtener Financiamiento</button>
+                <button type="button" class="btn btn-lg pull-right" data-dismiss="modal" style="border: 0px">
                     Cerrar
                 </button>
             </div>

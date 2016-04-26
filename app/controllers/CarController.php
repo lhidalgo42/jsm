@@ -38,7 +38,6 @@ class CarController extends \BaseController
         if (Input::get('email') != Input::get('email2')) {
             return Redirect::back()->withInput()->with('error', 'Los Correos No Conciden');
         }
-	//return Input::all();
         $car = new Car();
         $car->name = Input::get('name');
         $car->phone = Input::get('phone');
@@ -86,21 +85,25 @@ class CarController extends \BaseController
         $esquipament->save();
 
         $files = Input::file('files');
-        foreach ($files as $file) {
-            $ext = $file->getClientOriginalExtension();
-            $name = generateRandomString() . "." . $ext;
-            $destinationPath = public_path() . '/autos';
-                if ($ext == "png" || $ext == "PNG" || $ext == "jpg" || $ext == "JPG") {
-                    $photo = new PhotoFile();
-                    $photo->cars_id = $car->id;
-                    $photo->name = $name;
-                    $photo->active = 1;
-                    $photo->save();
-                    $file->move($destinationPath, $name);
-                    $image = Image::make(sprintf($destinationPath.'/%s', $name))->resize(1600, 1200)->save();
-                }
 
-        }
+            foreach ($files as $file) {
+                if (isset($file)) {
+                    $ext = $file->getClientOriginalExtension();
+                    $name = generateRandomString() . "." . $ext;
+                    $destinationPath = public_path() . '/autos';
+                    if ($ext == "png" || $ext == "PNG" || $ext == "jpg" || $ext == "JPG") {
+                        $photo = new PhotoFile();
+                        $photo->cars_id = $car->id;
+                        $photo->name = $name;
+                        $photo->active = 1;
+                        $photo->save();
+                        $file->move($destinationPath, $name);
+                        $image = Image::make(sprintf($destinationPath . '/%s', $name))->resize(1600, 1200)->save();
+                    }
+
+                }
+            }
+
             return Redirect::to('/')->with('success', 'Auto Agregado Exitosame, Pendiente de Aprovación');
 
         }

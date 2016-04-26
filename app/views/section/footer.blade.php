@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="container">
+    <div class="container"style="margin-left: 30;">
         <div class="widget col-lg-3 col-md-3 col-sm-6 col-xs-12">
            <!-- <div class="title">
                 <h3>Acerca de <span style="color: #bc1a02">JSMAUTOS</span></h3>
@@ -13,7 +13,7 @@
                 and
                 demoralized by the charms that they cannot foresee the pain</p>
                 <!-- end widget -->
-            <img src="images/logo.png" style="width: 100%;padding-top: 100px;">
+            <img src="images/logo.png" style="width: 130%;padding-top: 40px;margin-left: -75px;">
             <div class="title">
             <h3>{{Info::where('name','footer')->get()->first()->value}}</h3>
                 </div>
@@ -75,7 +75,7 @@
                 <li><i class="fa fa-map-marker"></i>
                     <span>Pedro Aguirre Cerda 4700, Cerrillos, Santiago</span></li>
                 <li><i class="fa fa-mobile-phone"></i> <span>(+ 56) 94-258-5505</span></li>
-                <li><a href="tel:+56942585505"><i class="fa fa-whatsapp" aria-hidden="true"></i> <span>+56942585505</span></a></li>
+                <li><a href="tel:+56942585505"><i class="fa fa-whatsapp" aria-hidden="true" style="color: rgb(78,200,91);"></i> <span>(+ 56) 94-258-5505</span></a></li>
                 <li><i class="fa fa-envelope"></i> <span>ventas@jsmautos.cl</span></li>
             </ul>
             <div class="social pull-left">
