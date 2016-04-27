@@ -29,16 +29,17 @@
                     </ul>
                     <p>Todo esto con atención personalizada a través de nuestros ejecutivos calificados.</p>
                 </div>
-            </div>
-            <div class="col-xs-12 col-md-12 ">
-                <div class="row center-block" style="max-width: 800px;">
-                    <div class="col-xs-3"><img src="/images/bancofalabella.png" alt="" style="width: 100%"></div>
-                    <div class="col-xs-3"><img src="/images/Abcdin_New_Logo.svg" alt="" style="width: 100%"></div>
-                    <div class="col-xs-3"><img src="/images/Logo-tanner.jpg" alt="" style="width: 100%"></div>
-                    <div class="col-xs-3"><img src="/images/credito-directo.png" alt="" style="width: 100%"></div>
+                <div class="col-xs-12 col-md-12 ">
+                    <div class="row center-block" style="max-width: 800px;">
+                        <div class="col-xs-3"><img src="/images/bancofalabella.png" alt="" style="width: 100%"></div>
+                        <div class="col-xs-3"><img src="/images/Abcdin_New_Logo.svg" alt="" style="width: 100%"></div>
+                        <div class="col-xs-3"><img src="/images/Logo-tanner.jpg" alt="" style="width: 100%"></div>
+                        <div class="col-xs-3"><img src="/images/credito-directo.png" alt="" style="width: 100%"></div>
+                    </div>
+                    <button class="btn btn-lg btn-primary center-block" id="btn-finance">Obtener Financiamiento</button>
                 </div>
-                <button class="btn btn-lg btn-primary center-block" id="btn-finance">Obtener Financiamiento</button>
             </div>
+
             <!-- Contact -->
 
             <div id="contact">
