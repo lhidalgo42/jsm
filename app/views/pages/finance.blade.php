@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="col-xs-12 col-md-12 ">
-                <button class="btn btn-block btn-lg btn-primary" id="btn-finance">Obtener Financiamiento</button>
+                <button class="btn btn-block btn-primary" id="btn-finance">Obtener Financiamiento</button>
             </div>
             <!-- Contact -->
 
