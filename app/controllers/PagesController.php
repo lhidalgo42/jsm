@@ -30,9 +30,9 @@ class PagesController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function finance()
 	{
-		//
+		return View::make('pages.finance');
 	}
 
 	/**

@@ -12,10 +12,16 @@
                         <a id="brand" class="navbar-brand" href="#"><img src="images/logo.png" alt="Law"
                                                                          style="width: 250px;"></a>
                     </div>
+                    <style>
+                        #nav > li > a{
+                            color: #0000ff !important;
+                        }
+                    </style>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right" id="nav">
                             <li class="current"><a href="#Home" title="">Home</a></li>
                             <li><a href="#products" title="">Vehículos</a></li>
+                            <li><a href="/finance">Financiamiento</a></li>
                             <li><a href="#faq" title="">Preguntas Frecuentes</a></li>
                             <li><a href="#contact" title="">Contacto</a></li>
                             <li><a href="/sell" title="" style="color: black !important;">Venda su Auto</a></li>

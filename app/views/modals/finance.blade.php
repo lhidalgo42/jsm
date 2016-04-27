@@ -228,7 +228,7 @@
 
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btn-lg btn-success pull-left"  style="border: 0px">
+                <button type="submit" class="btn btn-lg btn-primary pull-left"  style="border: 0px">
                     Guardar
                 </button>
                 <button type="button" class="btn btn-lg pull-right" data-dismiss="modal" style="border: 0px">

@@ -584,7 +584,7 @@ h2.header-text{
 	.form-control {
 		box-shadow:none !important;
 	}
-	.footer #contactform .btn-primary {
+	.footer #contactform  {
 		background:#222222;
 		border-color: #4f4f4f !important;
 		color:#9B9B9B;
@@ -663,18 +663,15 @@ h2.header-text{
 		width:100%;
 	}
 	
-	.item .btn-primary {
+	.item  {
 		background:none;
 		border:2px solid #fff !important;
 		border-radius: 0;
 		color: #fff;
 		padding: 8px 40px;
 	}
-	.btn {
-		font-size:13px;
-	}
-	.btn-dark,
-	.loadmore .btn-primary {
+
+	.loadmore  {
 		background: #FFFFFF !important;
 		border-color: #B2B2B2 !important;
 		border-radius: 0;
@@ -956,8 +953,7 @@ border: 0px solid transparent !important;
 /* ----------------------------------------------------
 	COLOR SCHEMES
 ------------------------------------------------------- */
-	.btn-dark:hover,
-	.btn-dark:focus,	
+
 	.purchase span,
 	body#error404 a,
 	.client_url {
@@ -980,7 +976,7 @@ border: 0px solid transparent !important;
 	.miniservice:hover .miniicon a,
 	.footer .title h3 span,
 	.post_meta,
-	.loadmore .btn-primary:hover,
+	.loadmore,
 	.navbar-default .navbar-nav > .open > a, 
 	.navbar-default .navbar-nav > .open > a:hover, 
 	.navbar-default .navbar-nav > .open > a:focus,
@@ -1001,18 +997,14 @@ border: 0px solid transparent !important;
 	.magnifier,
 	.title hr,
 	#page_header hr,
-	.btn-primary {
-		color:#fff;
-		background-color:#26cda4;
-	}
-	.btn-dark:hover,
-	.loadmore .btn-primary:hover,
+
+	.loadmore .
 	.flex-direction-nav a:hover,
 	.flex-direction-nav a:focus,
-	.btn-primary,
+
 	.miniservice:hover .miniicon,
-	.footer #contactform .btn-primary:hover,
-	.footer #contactform .btn-primary:focus,
+	.footer #contactform ,
+	.footer #contactform ,
 	.form-control:focus {
 		border-color:#26cda4 !important;
 	}
@@ -1226,9 +1218,7 @@ transition: all 0.4s;
 -webkit-transition: all 0.4s;
 -o-transition: all 0.4s;*/
 }
-.btn-blk{
-	text-align: center;
-}
+
 .caret-down {
 text-align: center;
 padding: 0 0 17px 0;
@@ -1301,23 +1291,7 @@ input {
   margin: auto;
   margin-bottom: 3em;
 }
-.btn {
-  display: block;
-  width: 200px;
-  margin: 0 auto;
-  padding: 10px 20px;
-  background: #cccccc;
-  color: #ffffff;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-size: 0.8em;
-  /*-moz-box-sizing: border-box;*/
-  box-sizing: border-box;
-}
-.btn:hover {
-  background: #333333;
-  color: #ffffff;
-}
+
 
 @media only screen and (max-width: 600px) {
   li {

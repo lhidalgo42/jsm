@@ -443,7 +443,7 @@
         </div>
     </div>
         <textarea name="comentario" class="form-control" placeholder="Escriba algun Comentario Acerca del Vehiculo" rows="6">{{Input::old('comentario')}}</textarea>
-    <button class="btn btn-lg f_button green">Enviar</button>
+    <button class="btn btn-primary center-block btn-block btn-lg" style="margin-top: 15px;">Enviar</button>
     </form>
 </div>
 

@@ -49,7 +49,21 @@
     <style>li{
             line-height:  1.3;
         }
+        input::-webkit-input-placeholder {
+            color: #4a4a4a !important;
+        }
 
+        input:-moz-placeholder { /* Firefox 18- */
+            color: #4a4a4a !important;
+        }
+
+        input::-moz-placeholder {  /* Firefox 19+ */
+            color: #4a4a4a !important;
+        }
+
+        input:-ms-input-placeholder {
+            color: #4a4a4a !important;
+        }
     </style>
 
 </head>
@@ -114,7 +128,11 @@
         handleFileSelect(this);
     })
 </script>
-
+<script>
+    $("#btn-finance").click(function () {
+        $("#finance").modal("show");
+    })
+</script>
 
 <script>
     $(".portfolio-items > div > ul > li > div > button").click(function () {

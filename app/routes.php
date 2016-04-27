@@ -17,6 +17,7 @@ Route::resource('sessions', 'SessionsController', ['only' => ['create', 'store',
 
 Route::get('/','PagesController@index');
 Route::get('/sell','PagesController@sell');
+Route::get('/finance','PagesController@finance');
 Route::post('/sendmail','MailController@create');
 Route::post('/getcar/{id}','CarController@show');
 Route::post('/create/car','CarController@create');
