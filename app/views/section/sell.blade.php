@@ -7,6 +7,15 @@
     </style>
     {{Form::open(array('url' => '/create/car', 'files' => true))}}
     <div class="row">
+        <h3 class="h3">También puedes consignar tu vehículo con compromiso de compra</h3>
+        <p>Si tu vehículo no lo vendemos, te lo compramos.</p>
+        Beneficio al consignar con nosotros:
+        <ul>
+            <li>Más alternativas de venta, ya que recibimos autos en parte de pago y</li>
+            <li>financiamos la compra por medio de 4 entidades financieras.</li>
+            <li>Mayor información (+ 56) 94-258-5505</li>
+        </ul>
+<hr>
         <h4 class="h4"><strong>Datos Personales</strong></h4>
         <div class="col-md-4">
             <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" value="{{Input::old('name')}}">

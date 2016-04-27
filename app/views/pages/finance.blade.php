@@ -9,6 +9,16 @@
             <div class="container">
                 @include('modals.finance')
                 <div class="col-xs-12 col-md-12">
+                    <h3 class="h3">También puedes consignar tu vehículo con compromiso de compra</h3>
+                    <p>Si tu vehículo no lo vendemos, te lo compramos.</p>
+                    Beneficio al consignar con nosotros:
+                    <ul>
+                        <li>Más alternativas de venta, ya que recibimos autos en parte de pago y</li>
+                        <li>financiamos la compra por medio de 4 entidades financieras.</li>
+                        <li>Mayor información (+ 56) 94-258-5505</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-12">
                     <h3 class="h3">Financiamos la Compra de tu Automovil</h3>
                     <p>Gestionamos tu Crédito Automotriz desde  (cuotas Fijas); Ofrecemos una gama de productos alternativos para tu financiamiento como:
                     </p>

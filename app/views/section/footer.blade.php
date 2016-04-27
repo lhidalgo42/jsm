@@ -74,8 +74,7 @@
             <ul class="contact_details">
                 <li><i class="fa fa-map-marker"></i>
                     <span>Pedro Aguirre Cerda 4700, Cerrillos, Santiago</span></li>
-                <li><i class="fa fa-mobile-phone"></i> <span>(+ 56) 94-258-5505</span></li>
-                <li><a href="tel:+56942585505"><i class="fa fa-whatsapp" aria-hidden="true" style="color: rgb(78,200,91);"></i> <span>(+ 56) 94-258-5505</span></a></li>
+                <li><a href="tel:+56942585505"><i class="fa fa-mobile-phone"></i><i class="fa fa-whatsapp" aria-hidden="true" style="color: rgb(78,200,91);"></i> <span>(+ 56) 94-258-5505</span></a></li>
                 <li><i class="fa fa-envelope"></i> <span>ventas@jsmautos.cl</span></li>
             </ul>
             <div class="social pull-left">

@@ -24,7 +24,7 @@
                             <li><a href="/finance">Financiamiento</a></li>
                             <li><a href="/#faq" title="">Preguntas Frecuentes</a></li>
                             <li><a href="/#contact" title="">Contacto</a></li>
-                            <li class="active"><a href="#" title="" style="color: black !important;">Venda su Auto</a></li>
+                            <li class="active"><a href="/sell" title="" style="color: black !important;">Venda su Auto</a></li>
                         </ul>
                     </div><!-- end navbar-collapse collapse -->
                 </div><!-- nav -->
