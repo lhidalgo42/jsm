@@ -2,19 +2,36 @@
     <?php
     $photos = PhotoFile::lists('name');
     $count = count($photos) -1;
-
+        $images = array();
+        $photo = array();
     if($count!=-1){
-        $id = rand(0,$count);
-    $photo = $photos[$id];
-    $image= '/autos/'.$photo;
+        $id[0] = rand(0,$count);
+        if($count >= 1)
+        $id[1] = rand(0,$count);
+        if($count >= 2)
+        $id[2] = rand(0,$count);
+        if($count >= 3)
+        $id[3] = rand(0,$count);
+        if($count >= 4)
+        $id[4] = rand(0,$count);
+        for($i=0;$i<count($id);$i++){
+            $images[$i]= '/autos/'.$photos[$id[$i]];
+        }
+
     }
     else{
         $image = '/images/5.jpg';
     }
         ?>
 
-    <div id="parallax" class="parallax bgback bg" style="background: url('{{$image}}') no-repeat;background-size: 100%;"
-         data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20"></div>
+    <div id="parallax" class="parallax bgback bg" style="background-size: 100%;"
+         data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+        <ul class="parallax bgback bg bxslider" style="width: 100%">
+            @foreach($images as $image)
+                <li><img src="{{$image}}" /></li>
+            @endforeach
+        </ul>
+    </div>
         <style>
             .oval {
                 width: auto;

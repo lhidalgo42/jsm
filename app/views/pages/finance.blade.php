@@ -20,8 +20,7 @@
                 </div>
                 <div class="col-xs-12 col-md-12">
                     <h3 class="h3">Financiamos la Compra de tu Automovil</h3>
-                    <p>Gestionamos tu Crédito Automotriz desde  (cuotas Fijas); Ofrecemos una gama de productos alternativos para tu financiamiento como:
-                    </p>
+                    <p>Gestionamos tu Crédito Automotriz desde  (cuotas Fijas); Ofrecemos una gama de productos alternativos para tu financiamiento como:</p>
                     <ul>
                         <li>Crédito Convencional</li>
                         <li>Compra Inteligente</li>

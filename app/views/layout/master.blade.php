@@ -31,6 +31,7 @@
     <link type="text/css" rel="stylesheet" href="/css/pro-bars.min.css" media="screen">
     <link type="text/css" rel="stylesheet" href="/css/animate.min.css" media="screen">
     <link type="text/css" rel="stylesheet" href="/css/rotator.css" media="screen">
+    <link rel="stylesheet" href="/css/jquery.bxslider.css">
     <!-- Google Font Styles -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada:700' rel='stylesheet' type='text/css'>
@@ -98,6 +99,7 @@
 <script src="/js/wow.min.js"></script>
 <script src="/js/rotator.js"></script>
 <script src="Imagecow.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/jquery.bxslider.min.js"></script>
 
 <script type="text/javascript">
     Imagecow.init();
@@ -282,6 +284,12 @@
     $("#financemo").click(function () {
         $("#finance").modal("show");
     })
+    $(document).ready(function(){
+        $('.bxslider').bxSlider({
+            auto:true,
+            mode: 'fade'
+        });
+    });
 </script>
 
 </body>

@@ -7,3 +7,5 @@ composer.lock
 .DS_Store
 Thumbs.db
 public/packages
+public/autos
+.idea
