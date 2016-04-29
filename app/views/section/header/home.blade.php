@@ -24,9 +24,8 @@
     }
         ?>
 
-    <div id="parallax" class="parallax bgback bg" style="background-size: 100%;"
-         data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
-        <ul class="parallax bgback bg bxslider" style="width: 100%">
+    <div id="parallax" class="parallax bgback bg">
+        <ul class="bxslider" style="width: 100%">
             @foreach($images as $image)
                 <li><img src="{{$image}}" /></li>
             @endforeach
