@@ -14,5 +14,9 @@ class UsersController extends \BaseController
         $cars = Car::all();
         return View::make('admin.accept')->with(compact('cars'));
     }
+    public function edit(){
+        $cars = Car::all();
+        return View::make('admin.carEdit')->with(compact('cars'));
+    }
 
 }

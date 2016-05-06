@@ -67,7 +67,18 @@
             color: #4a4a4a !important;
         }
     </style>
+    <!-- Main Scripts-->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/js/jquery.nav.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/rotator.js"></script>
+    <script src="Imagecow.js" type="text/javascript" charset="utf-8"></script>
 
+    <script type="text/javascript">
+        Imagecow.init();
+    </script>
 </head>
 <body id="custom">
 <div class="animationload">
@@ -92,18 +103,7 @@
 
 @yield('content')
 
-<!-- Main Scripts-->
-<script src="/js/jquery.js"></script>
-<script src="/js/bootstrap.js"></script>
-<script src="/js/custom.js"></script>
-<script src="/js/jquery.nav.js"></script>
-<script src="/js/wow.min.js"></script>
-<script src="/js/rotator.js"></script>
-<script src="Imagecow.js" type="text/javascript" charset="utf-8"></script>
 
-<script type="text/javascript">
-    Imagecow.init();
-</script>
 <script>
 
     function handleFileSelect(evt){

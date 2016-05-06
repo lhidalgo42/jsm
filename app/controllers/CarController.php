@@ -164,7 +164,7 @@ class CarController extends \BaseController
     public
     function update($id)
     {
-        //
+        $car = Car::find($id);
     }
 
 
@@ -177,7 +177,8 @@ class CarController extends \BaseController
     public
     function destroy($id)
     {
-        //
+        $car = Car::find($id);
+        $car->delete();
     }
 
 

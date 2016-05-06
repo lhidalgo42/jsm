@@ -26,4 +26,11 @@ Route::group(array('before' => 'auth'), function() {
     Route::get('/admin', ['as' => 'admin', 'uses' => 'UsersController@admin']);
     Route::get('/edit','UsersController@edit');
     Route::get('/accept','UsersController@accept');
+    Route::get('/add/new/FaqType','AskController@newGroup');
+    Route::get('/remove/new/FaqType','AskController@delGroup');
+    Route::get('/add/new/ask','AskController@create');
+    Route::get('/add/ask','AskController@create');
+    Route::post('/get/auto/{id}','CarController@show');
+    Route::post('/remove/auto/{id}','CarController@destroy');
+    Route::post('/del/askGroup/{is}','AskController@destroy');
 });

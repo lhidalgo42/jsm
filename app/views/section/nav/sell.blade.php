@@ -15,7 +15,7 @@
                     <div class="navbar-collapse collapse">
                         <style>
                             #nav > li > a{
-                             
+
                             }
                         </style>
                         <ul class="nav navbar-nav navbar-right" id="nav">

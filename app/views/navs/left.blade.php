@@ -13,7 +13,7 @@
                          <a href="/sell#sell">Agregar Autos</a>
                     </li>
                     <li>
-                        <a href="#/car/list">Editar Autos</a>
+                        <a href="/edit">Editar Autos</a>
                     </li>
                     <li>
                         <a href="/accept">Acceptar Publicaciones</a>
@@ -29,13 +29,13 @@
                         <a href="#"> {{$type->name}}<span class="fa arrow"></span></a>
                         <ul class="nav nav-third-level">
                             <li>
-                                <a href="#">Agregar Pregunta</a>
+                                <a href="/add/ask">Agregar Pregunta</a>
                             </li>
                             <li>
-                                <a href="#">Editar Preguntas</a>
+                                <a href="/edit/ask">Editar Preguntas</a>
                             </li>
                             <li>
-                                <a href="#">Eliminar Preguntas</a>
+                                <a href="/remove/ask">Eliminar Preguntas</a>
                             </li>
 
                         </ul>
