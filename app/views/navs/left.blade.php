@@ -29,7 +29,7 @@
                         <a href="#"> {{$type->name}}<span class="fa arrow"></span></a>
                         <ul class="nav nav-third-level">
                             <li>
-                                <a href="/add/ask">CRUD <small>(Crear,Ver,Editar,Borrar)</small> Preguntas</a>
+                                <a href="/add/ask/{{$type->id}}">CRUD <small>(Crear,Ver,Editar,Borrar)</small> Preguntas</a>
                             </li>
 
                         </ul>

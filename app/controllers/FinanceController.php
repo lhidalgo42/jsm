@@ -1,34 +1,32 @@
-  <?php
+<?php
 
-class AskController extends \BaseController {
+class FinanceController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
-	 * GET /ask
+	 * GET /finance
 	 *
 	 * @return Response
 	 */
-	public function newGroup()
-	{
-		$types = FaqType::all();
-		return View::make('ask.group.new')->with(compact('types'));
+	public function index()
+	{	$finances = Finance::all();
+		return View::make('admin.finance')->with(compact('finances'));
 	}
 
 	/**
 	 * Show the form for creating a new resource.
-	 * GET /ask/create
+	 * GET /finance/create
 	 *
 	 * @return Response
 	 */
-	public function create($id)
+	public function create()
 	{
-		$faqs = Faq::where('faq_types_id','=',$id)->get();
-		return View::make('ask.new')->with(compact('faqs'));
+		//
 	}
 
 	/**
 	 * Store a newly created resource in storage.
-	 * POST /ask
+	 * POST /finance
 	 *
 	 * @return Response
 	 */
@@ -39,7 +37,7 @@ class AskController extends \BaseController {
 
 	/**
 	 * Display the specified resource.
-	 * GET /ask/{id}
+	 * GET /finance/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -51,7 +49,7 @@ class AskController extends \BaseController {
 
 	/**
 	 * Show the form for editing the specified resource.
-	 * GET /ask/{id}/edit
+	 * GET /finance/{id}/edit
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -63,29 +61,26 @@ class AskController extends \BaseController {
 
 	/**
 	 * Update the specified resource in storage.
-	 * PUT /ask/{id}
+	 * PUT /finance/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function newGroupSave()
+	public function update($id)
 	{
-		$group = new FaqType();
-		$group->name = Input::get('name');
-		$group->save();
+		//
 	}
 
 	/**
 	 * Remove the specified resource from storage.
-	 * DELETE /ask/{id}
+	 * DELETE /finance/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
 	 */
 	public function destroy($id)
 	{
-		$faq = FaqType::find($id);
-		$faq->delete();
+		//
 	}
 
 }

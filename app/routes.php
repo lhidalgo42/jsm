@@ -29,7 +29,8 @@ Route::group(array('before' => 'auth'), function() {
     Route::get('/add/new/FaqType','AskController@newGroup');
     Route::get('/remove/new/FaqType','AskController@delGroup');
     Route::get('/add/new/ask','AskController@create');
-    Route::get('/add/ask','AskController@create');
+    Route::get('/add/ask/{id}','AskController@create');
+    Route::get('/finance/list','FinanceController@index');
     Route::post('/get/auto/{id}','CarController@show');
     Route::post('/remove/auto/{id}','CarController@destroy');
     Route::post('/remove/FaqType/{id}','AskController@destroy');
