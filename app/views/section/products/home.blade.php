@@ -9,7 +9,7 @@
         <div class="row">
             <div class="portfolio-items">
                 <?php
-                $autos = Car::orderBy('visitas', 'DESC')->get();
+                $autos = Car::where('active','=',1)->orderBy('visitas', 'DESC')->get();
                 ?>
                 @foreach($autos as $auto)
                     <div class="item-blog col-lg-4 col-md-4 col-sm-6 col-xs-12">

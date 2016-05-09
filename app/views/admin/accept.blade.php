@@ -26,21 +26,42 @@
                         <th>Estado</th>
                     </tr>
                     <tbody>
-                        @foreach($cars as $car)
-                            <?php $spec = Specification::find($car->id); ?>
+                    @foreach($cars as $car)
+                        <?php $spec = Specification::find($car->id); ?>
                         <tr>
                             <td>{{$spec->marca}} {{$spec->modelo}} - {{$spec->version}}</td>
                             <td>
-                                <div class="btn-group" role="group" aria-label="...">
-                                    <button type="button" data-val="SI" car="{{$car->id}}" class="btn btn-default @if($car->active == 1) active @endif">SI</button>
-                                    <button type="button" data-val="NO" car="{{$car->id}}" class="btn btn-default @if($car->active == 0) active @endif">NO</button>
-                                </div>
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-primary @if($car->active == 1) active @endif" data-id="{{$car->id}}">
+                                        <input type="radio" name="options" autocomplete="off" value="1"
+                                               @if($car->active == 1) checked @endif> SI
+                                    </label>
+                                    <label class="btn btn-primary @if($car->active == 0) active @endif" data-id="{{$car->id}}">
+                                        <input type="radio" name="options" autocomplete="off" value="0"
+                                               @if($car->active == 0) checked @endif> NO
+                                    </label></div>
+
                             </td>
                         </tr>
-                        @endforeach
+                    @endforeach
                     </tbody>
                 </table>
             </div>
+            <script>
+                $(".btn-group > label").click(function(){
+                    $.ajax({
+                        url:"/car/active",
+                        type:"POST",
+                        data:{
+                            id:$(this).attr('data-id'),
+                            value:$(this).children().val()
+                        },
+                        success:function(data){
+
+                        }
+                    })
+                });
+            </script>
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->

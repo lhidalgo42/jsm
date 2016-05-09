@@ -60,6 +60,7 @@
                     @endforeach
                     </tbody>
                 </table>
+                <button class="btn btn-success btn-lg btn-block">Agregar Nuevo</button>
             </div>
         </div>
         <script>

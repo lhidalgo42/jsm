@@ -36,17 +36,46 @@
                         @endforeach
                     </tbody>
                 </table>
+                <button class="btn btn-success center-block" id="new">Agregar Nuevo Grupo</button>
+            </div>
+        </div>
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="modalAdd">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <input type="text" id="name" class="form-control" placeholder="Nombre del Grupo">
+                        <button class="btn btn-block btn-lg btn-primary" id="addNew">Agregar</button>
+                    </div>
+                </div>
             </div>
         </div>
         <script>
-            $("#deleteGroup").click(function(){
-                var row = $(this);
-                $.ajax({
-                    url:"/del/askGroup/"+$(this).attr('data-id'),
-                    success:function(data){
-                        row.parent().parent().remove();
-                    }
-                })
+            $(function () {
+                $(".deleteGroup").click(function () {
+                    var row = $(this);
+                    $.ajax({
+                        url: "/remove/FaqType/" + $(this).attr('data-id'),
+                        type:'POST',
+                        success: function (data) {
+                            row.parent().parent().remove();
+                        }
+                    })
+                });
+                $("#new").click(function () {
+                    $("#modalAdd").modal('show');
+                });
+                $("#addNew").click(function () {
+                    $.ajax({
+                        url: '/add/new/group',
+                        type: 'POST',
+                        data: {
+                            name: $("#name").val()
+                        },
+                        success: function (data) {
+                            window.location.href = '/add/new/FaqType';
+                        }
+                    })
+                });
             });
         </script>
         <!-- /.row -->

@@ -288,7 +288,7 @@
 <script>
     $("#financemo").click(function () {
         $("#finance").modal("show");
-    })
+    });
     $("#myCarousel").carousel({
         interval:10000
     })
