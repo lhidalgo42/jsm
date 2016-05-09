@@ -68,9 +68,11 @@ class AskController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function newGroupSave()
 	{
-		//
+		$group = new FaqType();
+		$group->name = Input::get('name');
+		$group->save();
 	}
 
 	/**

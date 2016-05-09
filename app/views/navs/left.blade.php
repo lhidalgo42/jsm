@@ -29,13 +29,7 @@
                         <a href="#"> {{$type->name}}<span class="fa arrow"></span></a>
                         <ul class="nav nav-third-level">
                             <li>
-                                <a href="/add/ask">Agregar Pregunta</a>
-                            </li>
-                            <li>
-                                <a href="/edit/ask">Editar Preguntas</a>
-                            </li>
-                            <li>
-                                <a href="/remove/ask">Eliminar Preguntas</a>
+                                <a href="/add/ask">CRUD <small>(Crear,Ver,Editar,Borrar)</small> Preguntas</a>
                             </li>
 
                         </ul>

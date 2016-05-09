@@ -149,9 +149,11 @@ class CarController extends \BaseController
      * @return Response
      */
     public
-    function edit($id)
+    function active()
     {
-        //
+        $car = Car::find(Input::get('id'));
+        $car->active = Input::get('value');
+        $car->save();
     }
 
 

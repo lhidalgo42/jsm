@@ -32,5 +32,7 @@ Route::group(array('before' => 'auth'), function() {
     Route::get('/add/ask','AskController@create');
     Route::post('/get/auto/{id}','CarController@show');
     Route::post('/remove/auto/{id}','CarController@destroy');
-    Route::post('/del/askGroup/{is}','AskController@destroy');
+    Route::post('/remove/FaqType/{id}','AskController@destroy');
+    Route::post('/add/new/group','AskController@newGroupSave');
+    Route::post('/car/active','CarController@active');
 });
