@@ -5,7 +5,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/"><img src="/images/logo.png" style="width: 5%;position: absolute;"> <span style="margin-left: 80px;">JSMAutos - Admin</span></a>
+        <a class="navbar-brand" href="/"><img src="/images/logo.png" style="width: 5%;position: absolute;"> <span style="margin-left: 90px;"> JSMAutos - Admin</span></a>
     </div>
     <!-- /.navbar-header -->
 

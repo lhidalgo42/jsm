@@ -18,6 +18,8 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
+    <!-- Custom styles for this template -->
+    <link href="/css/carousel.css" rel="stylesheet">
 
     <!-- Bootstrap Styles -->
     <link type="text/css" rel="stylesheet" href="/css/bootstrap.css" media="screen">
@@ -31,8 +33,7 @@
     <link type="text/css" rel="stylesheet" href="/css/pro-bars.min.css" media="screen">
     <link type="text/css" rel="stylesheet" href="/css/animate.min.css" media="screen">
     <link type="text/css" rel="stylesheet" href="/css/rotator.css" media="screen">
-    <!-- Custom styles for this template -->
-    <link href="/css/carousel.css" rel="stylesheet">
+
     <!-- Google Font Styles -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada:700' rel='stylesheet' type='text/css'>
@@ -67,18 +68,7 @@
             color: #4a4a4a !important;
         }
     </style>
-    <!-- Main Scripts-->
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.js"></script>
-    <script src="/js/custom.js"></script>
-    <script src="/js/jquery.nav.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/rotator.js"></script>
-    <script src="Imagecow.js" type="text/javascript" charset="utf-8"></script>
 
-    <script type="text/javascript">
-        Imagecow.init();
-    </script>
 </head>
 <body id="custom">
 <div class="animationload">
@@ -103,7 +93,18 @@
 
 @yield('content')
 
+        <!-- Main Scripts-->
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/custom.js"></script>
+<script src="/js/jquery.nav.js"></script>
+<script src="/js/wow.min.js"></script>
+<script src="/js/rotator.js"></script>
+<script src="Imagecow.js" type="text/javascript" charset="utf-8"></script>
 
+<script type="text/javascript">
+    Imagecow.init();
+</script>
 <script>
 
     function handleFileSelect(evt){
